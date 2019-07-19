@@ -1,4 +1,5 @@
 import React from 'react';
+import Intro from './containers/Intro'
 import Navbar from './components/Navbar'
 import About from './containers/About'
 import Portfolio from './containers/Portfolio'
@@ -9,6 +10,7 @@ class App extends React.Component {
   render(){
     return (
       <div className="app">
+        <Intro />
         <Navbar />
         <About />
         <Portfolio />

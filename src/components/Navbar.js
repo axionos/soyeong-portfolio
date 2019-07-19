@@ -60,13 +60,7 @@ export default class StickyLayout extends Component {
             background color.
           */}
 
-        <Container text style={{ marginTop: '3em' }}>
-          <Header as='h1'>Sticky Example</Header>
-          <p>
-            This example shows how to use lazy loaded images, a sticky menu, and a simple text
-            container
-          </p>
-        </Container>
+        
 
         {/* Attaching the top menu is a simple operation, we only switch `fixed` prop and add another style if it has
             gone beyond the scope of visibility
