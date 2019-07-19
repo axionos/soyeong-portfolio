@@ -1,13 +1,10 @@
 
 import _ from 'lodash'
 import React, { Component } from 'react'
-import {
-  Container,
-  Dropdown,
-  Header,
-  Menu,
-  Visibility,
-} from 'semantic-ui-react'
+import { Container, Dropdown, Menu, Visibility } from 'semantic-ui-react'
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
+ 
 
 const menuStyle = {
   border: 'none',
@@ -60,7 +57,7 @@ export default class StickyLayout extends Component {
             background color.
           */}
 
-        
+
 
         {/* Attaching the top menu is a simple operation, we only switch `fixed` prop and add another style if it has
             gone beyond the scope of visibility
