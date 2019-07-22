@@ -2,9 +2,8 @@
 import _ from 'lodash'
 import React, { Component } from 'react'
 import { Container, Dropdown, Menu, Visibility } from 'semantic-ui-react'
-import * as Scroll from 'react-scroll';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
- 
+
+
 
 const menuStyle = {
   border: 'none',
@@ -94,10 +93,7 @@ export default class StickyLayout extends Component {
           </Menu>
         </Visibility>
 
-        <Container text>
-          {_.times(8, i => <Paragraph key={i} />)}
-
-        </Container>
+        
 
 
       </div>
