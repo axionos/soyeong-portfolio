@@ -1,3 +1,20 @@
+/*/// INTRO ///*/
+
+.intro{
+  min-height: 1080px;
+}
+
+.intro-text-container {
+  height: 100%;
+  display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* /// ABOUT ME /// */
+
 .photos-container{
 
 }

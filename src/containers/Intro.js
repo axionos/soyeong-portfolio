@@ -5,10 +5,13 @@ class Intro extends React.Component {
   render(){
     return (
       <div className="intro">
-
-        <h1>Hello, I'm Soyeong!</h1>
-        <h1>Full Stack Software Engineer based in New York</h1>
-        <Button>View My Work</Button>
+        <div className='intro-text-container'>
+          <div className='intro-text'>
+            <h1>Hello, I'm Soyeong!</h1>
+            <h1>Full Stack Software Engineer based in New York</h1>
+          <Button>View My Work</Button>
+          </div>
+        </div>
       </div>
     );
   }
