@@ -69,13 +69,13 @@ move = () => {
     return (
       <Container>
         <Grid stackable columns={2}>
-          <Grid.Column width={6} className='photos-container'>
+          <Grid.Column width={7} className='photos-container'>
             <Segment>
               <div className='photo-1'/>
 
             </Segment>
           </Grid.Column>
-          <Grid.Column width={10} className='skills-container'>
+          <Grid.Column width={9} className='skills-container'>
             <button onClick={this.move}>click</button>
             <div className='bar-container'>
               <div className='js label'>JavaScript</div>
