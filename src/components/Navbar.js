@@ -1,5 +1,5 @@
 
-import _ from 'lodash'
+// import _ from 'lodash'
 import React, { Component } from 'react'
 import { Container, Dropdown, Menu, Visibility } from 'semantic-ui-react'
 
@@ -93,7 +93,7 @@ export default class StickyLayout extends Component {
           </Menu>
         </Visibility>
 
-        
+
 
 
       </div>
