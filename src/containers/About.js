@@ -10,6 +10,7 @@ move = () => {
   const react = document.getElementById("reactBar")
   const css = document.getElementById("cssBar")
   const ruby = document.getElementById("rubyBar")
+  const ui = document.getElementById("uiBar")
   const photoshop = document.getElementById("photoshopBar")
   const illustrator = document.getElementById("illustratorBar")
   let width = 0
@@ -45,6 +46,8 @@ move = () => {
       ruby.innerHTML = width * 1 + 15 + '%';
       js.style.width = width + '%';
       js.innerHTML = width * 1 + 15 + '%';
+      ui.style.width = width + '%';
+      ui.innerHTML = width * 1 + 15 + '%';
     }
   }, 15)
 
@@ -58,7 +61,7 @@ move = () => {
       illustrator.style.width = width + '%';
       illustrator.innerHTML = width * 1 + 15 + '%';
     }
-  }, 25)
+  }, 30)
 }
 
 
@@ -69,8 +72,7 @@ move = () => {
           <Grid.Column className='photos-container'>
             <Segment>
               <div className='photo-1'/>
-              <div className='photo-2'/>
-              <div className='photo-3'/>
+
             </Segment>
           </Grid.Column>
           <Grid.Column className='skills-container'>
@@ -94,6 +96,10 @@ move = () => {
             <div className='bar-container'>
               <div className='css label'>CSS</div>
               <div id="cssBar" className='bar'>0%</div>
+            </div>
+            <div className='bar-container'>
+              <div className='ui-design label'>UI Design</div>
+              <div id="uiBar" className='bar'>0%</div>
             </div>
             <div className='bar-container'>
               <div className='photoshop label'>Photoshop</div>
