@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container }from 'semantic-ui-react'
+import { Container, Grid, Modal, Button, Image, Header }from 'semantic-ui-react'
 
 class Portfolio extends React.Component {
   render(){
@@ -7,56 +7,91 @@ class Portfolio extends React.Component {
       <div className="portfolio">
 
       <Container>
+        <h1>Projects</h1>
+        <Grid>
+          <Grid.Row>
+            <Grid.Column width={5}>
+              <Modal trigger={<div className='project-img-container'>Show Modal</div>}>
+                <Modal.Content image>
+                  <Image wrapped size='medium' src='/images/avatar/large/rachel.png' />
+                  <Modal.Description>
+                    <Header>My Trip Planner</Header>
+                    <p>We've found the following gravatar image associated with your e-mail address.</p>
+                    <div className='skills-used'></div>
+                  </Modal.Description>
+                </Modal.Content>
+              </Modal>
+            </Grid.Column>
+            <Grid.Column width={5}>
+              <Modal trigger={<div className='project-img-container'>Show Modal</div>}>
+                <Modal.Header>Select a Photo</Modal.Header>
+                <Modal.Content image>
+                  <Image wrapped size='medium' src='/images/avatar/large/rachel.png' />
+                  <Modal.Description>
+                    <Header>Default Profile Image</Header>
+                    <p>We've found the following gravatar image associated with your e-mail address.</p>
+                    <div className='skills-used'></div>
+                  </Modal.Description>
+                </Modal.Content>
+              </Modal>
+            </Grid.Column>
+            <Grid.Column width={5}>
+              <Modal trigger={<div className='project-img-container'>Show Modal</div>}>
+                <Modal.Header>Select a Photo</Modal.Header>
+                <Modal.Content image>
+                  <Image wrapped size='medium' src='/images/avatar/large/rachel.png' />
+                  <Modal.Description>
+                    <Header>Default Profile Image</Header>
+                    <p>We've found the following gravatar image associated with your e-mail address.</p>
+                    <div className='skills-used'></div>
+                  </Modal.Description>
+                </Modal.Content>
+              </Modal>
+            </Grid.Column>
+          </Grid.Row>
 
-      <p>
-        {[
-          'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ',
-          'tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas ',
-          'semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ',
-          'ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean ',
-          'fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. ',
-          'Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor ',
-          'neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, ',
-          'accumsan porttitor, facilisis luctus, metus',
-        ].join('')}
-      </p>
-      <p>
-        {[
-          'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ',
-          'tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas ',
-          'semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ',
-          'ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean ',
-          'fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. ',
-          'Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor ',
-          'neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, ',
-          'accumsan porttitor, facilisis luctus, metus',
-        ].join('')}
-      </p>
-      <p>
-        {[
-          'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ',
-          'tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas ',
-          'semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ',
-          'ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean ',
-          'fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. ',
-          'Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor ',
-          'neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, ',
-          'accumsan porttitor, facilisis luctus, metus',
-        ].join('')}
-      </p>
-      <p>
-        {[
-          'Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ',
-          'tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas ',
-          'semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ',
-          'ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean ',
-          'fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. ',
-          'Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor ',
-          'neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, ',
-          'accumsan porttitor, facilisis luctus, metus',
-        ].join('')}
-      </p>
-
+          <Grid.Row>
+            <Grid.Column width={5}>
+              <Modal trigger={<div className='project-img-container'>Show Modal</div>}>
+                <Modal.Header>Select a Photo</Modal.Header>
+                <Modal.Content image>
+                  <Image wrapped size='medium' src='/images/avatar/large/rachel.png' />
+                  <Modal.Description>
+                    <Header>Default Profile Image</Header>
+                    <p>We've found the following gravatar image associated with your e-mail address.</p>
+                    <div className='skills-used'></div>
+                  </Modal.Description>
+                </Modal.Content>
+              </Modal>
+            </Grid.Column>
+            <Grid.Column width={5}>
+              <Modal trigger={<div className='project-img-container'>Show Modal</div>}>
+                <Modal.Header>Select a Photo</Modal.Header>
+                <Modal.Content image>
+                  <Image wrapped size='medium' src='/images/avatar/large/rachel.png' />
+                  <Modal.Description>
+                    <Header>Default Profile Image</Header>
+                    <p>We've found the following gravatar image associated with your e-mail address.</p>
+                    <div className='skills-used'></div>
+                  </Modal.Description>
+                </Modal.Content>
+              </Modal>
+            </Grid.Column>
+            <Grid.Column width={5}>
+              <Modal trigger={<div className='project-img-container'>Show Modal</div>}>
+                <Modal.Header>Select a Photo</Modal.Header>
+                <Modal.Content image>
+                  <Image wrapped size='medium' src='/images/avatar/large/rachel.png' />
+                  <Modal.Description>
+                    <Header>Default Profile Image</Header>
+                    <p>We've found the following gravatar image associated with your e-mail address.</p>
+                    <div className='skills-used'></div>
+                  </Modal.Description>
+                </Modal.Content>
+              </Modal>
+            </Grid.Column>
+          </Grid.Row>
+        </Grid>
       </Container>
       </div>
     );

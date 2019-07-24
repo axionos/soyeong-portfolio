@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Segment }from 'semantic-ui-react'
+import { Container, Grid, Segment, Icon }from 'semantic-ui-react'
 
 class About extends React.Component {
 
@@ -68,6 +68,7 @@ move = () => {
   render(){
     return (
       <Container>
+        <h1>About Me</h1>
         <Grid stackable columns={2}>
           <Grid.Column width={7} className='photos-container'>
             <Segment>
@@ -113,6 +114,10 @@ move = () => {
         </Grid>
         <div className='about-me-container'>
           <p>Full stack software engineer with a passion for continuous learning and building a sophisticated web application. With experience in Ruby on Rails, JavaScript, React and CSS3 and background as a web designer, I discovered web development through utilizing my skill to visualize web apps. I'm a strong collaborator and I bring exceptional skills in problem-solving and communication through extensive experiences from online marketing and customer service.</p>
+          <span className='icon-container'>
+            <Icon name='linkedin' size='huge'/>
+            <Icon name='github square' size='huge'/>
+          </span>
         </div>
       </Container>
     );
