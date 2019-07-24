@@ -73,19 +73,24 @@ class Portfolio extends React.Component {
               <Modal closeIcon
                 size='large'
                 dimmer='blurring'
-                trigger={<div className='project-img-container'>Show Modal</div>}
+                trigger={<div className='project-img-container'>Dope Cocktail Menu</div>}
               >
-                <Modal.Header>Select a Photo</Modal.Header>
                 <Modal.Content image>
                   <Image wrapped size='medium' src='/images/avatar/large/rachel.png' />
                   <Modal.Description>
-                    <Header>Default Profile Image</Header>
-                    <p>Bobafinder lets a user to find a bubble tea stores in NYC, filter the search result on different brands, save favorite stores and visited stores on the user profile.</p>
-                    <p>Developed a Rails API backend with endpoints for users, stores, and user-stores </p>
-                    <p>Implemented user interface employing React with Bootstrap React and custom CSS for styling</p>
-                    <p>Utilized JSON Web Tokens and localStorage to store encrypted user information client-side</p>
-                    <p>Scraped Foursquare API to provide bubble tea store  information in New York City</p>
-                    <div className='skills-used'></div>
+                    <h2>Dope Cocktail Menu</h2>
+                    <div className='project-detail'>
+                      <p>Dope Cocktail Menu is an interactive cocktail recipe menu based on a user's mood. It allows the user to view, like, comment on a recipe, or select a different mood from the menu.</p>
+                      <p>● Developed Rails API backend with endpoints for cocktails, comments, mood and likes</p>
+                      <p>● Implemented custom CSS for user interface styling</p>
+                      <p>● Built the features for the app using vanilla JavaScript</p>
+                    </div>
+                    <div className='skills-used'>
+                      <span className='skill-used first'>JavaScript</span>
+                      <span className='skill-used'>Ruby on Rails</span>
+                      <span className='skill-used'>Bootstrap</span>
+                      <span className='skill-used'>Custom CSS</span>
+                    </div>
                   </Modal.Description>
                 </Modal.Content>
               </Modal>
