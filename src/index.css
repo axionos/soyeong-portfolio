@@ -84,15 +84,24 @@
   padding: 10px 0 20px 0;
 }
 
-.skills-holder {
-  margin: 10px 10px 10px 0;
+.project-detail p {
+  margin-bottom: 5px;
 }
+
+p:first-child {
+  margin-bottom: 15px;
+}
+
+/*
+.skills-used {
+  padding: 10px 0 0 0;
+} */
 
 .skill-used{
   background-color: #aaa;
   color: #fff;
   padding: 5px 10px;
-  margin: 10px 5px 10px 0;
+  margin: 20px 5px 10px 0;
 }
 
 .skill-used.first {

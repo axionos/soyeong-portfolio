@@ -27,7 +27,7 @@ class Portfolio extends React.Component {
                       <p>● Utilized JSON Web Tokens and localStorage to store encrypted user information client-side</p>
                       <p>● Utilized Google Map and Google Place APIs to pull and render data on information and photos for tour spots</p>
                     </div>
-                    <div className='skills-holder'>
+                    <div className='skills-used'>
                       <span className='skill-used first'>React</span>
                       <span className='skill-used'>Ruby on Rails</span>
                       <span className='skill-used'>Google Maps API</span>
@@ -48,7 +48,7 @@ class Portfolio extends React.Component {
                 trigger={<div className='project-img-container'>Boba Finder</div>}
               >
                 <Modal.Content className='project-modal'>
-                  <Image wrapped size='medium' src='/images/avatar/medium/rachel.png' />
+                  <iframe title='boba-finder' className='demo-video' src="https://www.youtube.com/embed/qr4X7a85PrA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <Modal.Description>
                     <h2>Boba Finder</h2>
                     <div className='project-detail'>
@@ -76,7 +76,7 @@ class Portfolio extends React.Component {
                 trigger={<div className='project-img-container'>Dope Cocktail Menu</div>}
               >
                 <Modal.Content className='project-modal'>
-                  <Image wrapped size='medium' src='/images/avatar/medium/rachel.png' />
+                  <iframe title='dope-cocktail-menu' className='demo-video' src="https://www.youtube.com/embed/YVpJimVz3iE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                   <Modal.Description>
                     <h2>Dope Cocktail Menu</h2>
                     <div className='project-detail'>
