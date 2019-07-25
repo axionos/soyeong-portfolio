@@ -58,9 +58,26 @@
 
 /*/// PROJECT ///*/
 
+.portfolio {
+
+}
+
+.project-modal{
+  min-height: 850px;
+}
+
+.description {
+  padding: 30px 20px;
+}
+
 .project-img-container {
   background-color: goldenrod;
   height: 250px;
+}
+
+.demo-video {
+  width: 100%;
+  height: 500px;
 }
 
 .project-detail {

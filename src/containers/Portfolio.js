@@ -16,8 +16,8 @@ class Portfolio extends React.Component {
                 dimmer='blurring'
                 trigger={<div className='project-img-container'>My Trip Planner</div>}
               >
-                <Modal.Content image>
-                  <Image wrapped size='medium' src='/images/avatar/medium/rachel.png' />
+                <Modal.Content className='project-modal'>
+                  <iframe title='my-trip-planner' className='demo-video' src="https://www.youtube.com/embed/j-LVemjrZx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
                   <Modal.Description>
                     <h2>My Trip Planner</h2>
                     <div className='project-detail'>
@@ -47,7 +47,7 @@ class Portfolio extends React.Component {
                 dimmer='blurring'
                 trigger={<div className='project-img-container'>Boba Finder</div>}
               >
-                <Modal.Content image>
+                <Modal.Content className='project-modal'>
                   <Image wrapped size='medium' src='/images/avatar/medium/rachel.png' />
                   <Modal.Description>
                     <h2>Boba Finder</h2>
@@ -75,7 +75,7 @@ class Portfolio extends React.Component {
                 dimmer='blurring'
                 trigger={<div className='project-img-container'>Dope Cocktail Menu</div>}
               >
-                <Modal.Content image>
+                <Modal.Content className='project-modal'>
                   <Image wrapped size='medium' src='/images/avatar/medium/rachel.png' />
                   <Modal.Description>
                     <h2>Dope Cocktail Menu</h2>
@@ -104,7 +104,7 @@ class Portfolio extends React.Component {
                 dimmer='blurring'
                 trigger={<div className='project-img-container'>Fund Run</div>}
               >
-                <Modal.Content image>
+                <Modal.Content className='project-modal'>
                   <Image wrapped size='medium' src='/images/avatar/medium/rachel.png' />
                   <Modal.Description>
                     <h2>Fund Run</h2>
@@ -128,7 +128,7 @@ class Portfolio extends React.Component {
                 dimmer='blurring'
                 trigger={<div className='project-img-container'>City Guru</div>}
               >
-                <Modal.Content image>
+                <Modal.Content className='project-modal'>
                   <Image wrapped size='medium' src='/images/avatar/medium/rachel.png' />
                   <Modal.Description>
                     <h2>City Guru</h2>
@@ -152,7 +152,7 @@ class Portfolio extends React.Component {
                 trigger={<div className='project-img-container'>Show Modal</div>}
               >
                 <Modal.Header>Select a Photo</Modal.Header>
-                <Modal.Content image>
+                <Modal.Content className='project-modal'>
                   <Image wrapped size='medium' src='/images/avatar/medium/rachel.png' />
                   <Modal.Description>
                     <Header>Default Profile Image</Header>
