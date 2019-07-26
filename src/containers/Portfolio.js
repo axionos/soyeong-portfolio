@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Modal, Button, Image, Header }from 'semantic-ui-react'
+import { Container, Grid, Modal, Image, Header }from 'semantic-ui-react'
 
 class Portfolio extends React.Component {
   render(){
