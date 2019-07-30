@@ -69,7 +69,7 @@ move = () => {
     return (
       <div className='about-me'>
         <Container>
-          <h1>About Me</h1>
+          <h1 className='page-title'>About Me</h1>
           <Grid stackable columns={2}>
             <Grid.Column width={7} className='photos-container'>
               <Segment>
@@ -114,11 +114,15 @@ move = () => {
             </Grid.Column>
           </Grid>
           <div className='about-me-container'>
+            <div className='icon-container'>
+              <a href='https://www.linkedin.com/in/soyeongoh/' target='_blank' rel='noopener noreferrer'>
+                <Icon name='linkedin' size='big' />
+              </a>
+              <a href='https://github.com/axionos' target='_blank' rel='noopener noreferrer'>
+                <Icon name='github square' size='big'/>
+              </a>
+            </div>
             <p>Full stack software engineer with a passion for continuous learning and building a sophisticated web application. With experience in Ruby on Rails, JavaScript, React and CSS3 and background as a web designer, I discovered web development through utilizing my skill to visualize web apps. I'm a strong collaborator and I bring exceptional skills in problem-solving and communication through extensive experiences from online marketing and customer service.</p>
-            <span className='icon-container'>
-              <Icon name='linkedin' size='huge'/>
-              <Icon name='github square' size='huge'/>
-            </span>
           </div>
         </Container>
       </div>

@@ -7,7 +7,7 @@ class Portfolio extends React.Component {
       <div className="portfolio">
 
       <Container>
-        <h1>Projects</h1>
+        <h1 className='page-title'>Projects</h1>
         <Grid>
           <Grid.Row>
             <Grid.Column width={5}>

@@ -44,22 +44,24 @@
   margin-left: -300px;
 }
 
-/* .intro-text h1 {
-  margin: 0;
-} */
-
 .ui.button.view-work {
   margin: 20px 0;
 }
 
 /* /// ABOUT ME /// */
 
+.page-title {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
 .about-me {
   padding: 100px 0;
 }
 
-.photos-container{
-
+.about-me p {
+  font-size: 16px;
 }
 
 .photo-1 {
@@ -67,23 +69,22 @@
   height: 350px;
   background-color: pink;
 }
-.skills-container {
-
-}
 
 .bar-container {
   width: 100%;
-  background-color: gray;
+  background-color: #ddd;
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
-  margin: 10px 0;
+  margin: 15px 0;
 }
 
 .label {
   background-color: blue;
   color: #fff;
-  width: 70px;
+  width: 100px;
+  text-align: center;
+  padding-top: 5px;
 }
 
 .bar {
@@ -99,11 +100,21 @@
   padding: 30px 0;
 }
 
+.about-me-container p {
+  text-align: center;
+}
+
+.icon-container {
+  width: 140px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
 /*/// PROJECT ///*/
 
 .portfolio {
   padding: 100px 0;
-  background: #aaa;
+  background: #eee;
 }
 
 .project-modal{
@@ -156,12 +167,12 @@ p:first-child {
 
 .blog {
   padding: 100px 0;
-  background: pink;
+  background: #fff;
 }
 
 /*/// CONTACT ///*/
 
 .contact {
   padding: 100px 0;
-  background-color: gray;
+  background-color: #eee;
 }
