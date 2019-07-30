@@ -9,7 +9,7 @@ class Intro extends React.Component {
           <div className='intro-text'>
             <h1>Hello, I'm Soyeong!</h1>
             <h1>Full Stack Software Engineer based in New York</h1>
-          <Button>View My Work</Button>
+          <Button className='view-work'>View My Work</Button>
           </div>
         </div>
       </div>

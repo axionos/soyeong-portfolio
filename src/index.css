@@ -26,15 +26,30 @@
 
 .intro{
   min-height: 1080px;
+  /* display: -webkit-flex;
+  display: -ms-flex;
+  display: flex; */
+  /* -ms-align-items: center;
+  align-items: center; */
+  /* justify-content: center; */
 }
 
 .intro-text-container {
-  height: 100%;
-  display: -webkit-flex;
-    display: -ms-flex;
-    display: flex;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  width: 600px;
+  height: 150px;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  margin-left: -300px;
+}
+
+/* .intro-text h1 {
+  margin: 0;
+} */
+
+.ui.button.view-work {
+  margin: 20px 0;
 }
 
 /* /// ABOUT ME /// */
