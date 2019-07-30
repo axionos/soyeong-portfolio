@@ -9,11 +9,9 @@ class Contact extends React.Component {
       <Container>
         <h1>Contact Soyeong</h1>
         <Form>
-
           <Form.Input name='Name' placeholder='Your Name' />
           <Form.Input name='Email' placeholder='Your Email' />
           <Form.TextArea placeholder='Enter your Message here!' />
-
           <Button type='submit'>Submit</Button>
         </Form>
 
