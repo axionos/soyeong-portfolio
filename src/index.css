@@ -1,3 +1,27 @@
+/*/// NAVBAR ///*/
+
+.nav-wrapper {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.ui.menu:not(.secondary):not(.text):not(.tabular):not(.borderless)>.container>.item:not(.right):not(.borderless):first-child {
+  border: 0;
+}
+.ui.menu .item:before {
+  background: none;
+}
+
+.nav-container {
+  /* border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0; */
+}
+
+.ui.menu .item{
+  padding: 13px 20px;
+  font-size: 16px;
+}
 /*/// INTRO ///*/
 
 .intro{
@@ -14,6 +38,10 @@
 }
 
 /* /// ABOUT ME /// */
+
+.about-me {
+  padding: 100px 0;
+}
 
 .photos-container{
 
@@ -59,7 +87,8 @@
 /*/// PROJECT ///*/
 
 .portfolio {
-
+  padding: 100px 0;
+  background: #aaa;
 }
 
 .project-modal{
@@ -92,10 +121,6 @@ p:first-child {
   margin-bottom: 15px;
 }
 
-/*
-.skills-used {
-  padding: 10px 0 0 0;
-} */
 
 .skill-used{
   background-color: #aaa;
@@ -110,4 +135,18 @@ p:first-child {
 
 .bold {
   font-weight: bold;
+}
+
+/*/// BLOG ///*/
+
+.blog {
+  padding: 100px 0;
+  background: pink;
+}
+
+/*/// CONTACT ///*/
+
+.contact {
+  padding: 100px 0;
+  background-color: gray;
 }
