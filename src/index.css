@@ -176,3 +176,11 @@ p:first-child {
   padding: 100px 0;
   background-color: #eee;
 }
+
+.submit-btn-container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
