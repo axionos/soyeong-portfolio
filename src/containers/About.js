@@ -67,7 +67,7 @@ move = () => {
 
   render(){
     return (
-      <div className='about-me'>
+      <div className='about-me' id='about'>
         <Container>
           <h1 className='page-title'>About Me</h1>
           <Grid stackable columns={2}>

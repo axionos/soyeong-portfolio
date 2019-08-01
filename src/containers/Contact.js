@@ -4,7 +4,7 @@ import { Container, Form, Button, Grid }from 'semantic-ui-react'
 class Contact extends React.Component {
   render(){
     return (
-      <div className="contact">
+      <div className="contact" id='contact'>
         <Container>
           <h1 className='page-title'>Contact Soyeong</h1>
           <div className='contact-form-container'>

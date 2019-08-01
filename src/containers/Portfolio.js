@@ -4,7 +4,7 @@ import { Container, Grid, Modal, Image, Header }from 'semantic-ui-react'
 class Portfolio extends React.Component {
   render(){
     return (
-      <div className="portfolio">
+      <div className="portfolio" id='project'>
 
       <Container>
         <h1 className='page-title'>Projects</h1>

@@ -4,7 +4,7 @@ import { Container }from 'semantic-ui-react'
 class Blog extends React.Component {
   render(){
     return (
-      <div className="blog">
+      <div className="blog" id='blog'>
         <Container>
           <h1 className='page-title'>Blog</h1>
           <div id="medium-widget"></div>

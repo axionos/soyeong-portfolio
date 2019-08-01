@@ -2,6 +2,7 @@
 // import _ from 'lodash'
 import React, { Component } from 'react'
 import { Container, Dropdown, Menu, Visibility } from 'semantic-ui-react'
+import { Link } from 'react-scroll'
 
 
 
@@ -57,12 +58,57 @@ export default class StickyLayout extends Component {
             style={menuFixed ? fixedMenuStyle : menuStyle}
           >
             <Container className='nav-container'>
+              <Link
+                activeClass="active"
+                to="intro"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration= {500}
+              >
+                <Menu.Item header>Home</Menu.Item>
+              </Link>
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration= {500}
+              >
+                <Menu.Item as='a'>About</Menu.Item>
+              </Link>
+              <Link
+                activeClass="active"
+                to="project"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration= {500}
+              >
+                <Menu.Item as='a'>Project</Menu.Item>
+              </Link>
 
-              <Menu.Item header>Home</Menu.Item>
-              <Menu.Item as='a'>About</Menu.Item>
-              <Menu.Item as='a'>Portfolio</Menu.Item>
-              <Menu.Item as='a'>Blog</Menu.Item>
-              <Menu.Item as='a'>Contact</Menu.Item>
+              <Link
+                activeClass="active"
+                to="blog"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration= {500}
+              >
+                <Menu.Item as='a'>Blog</Menu.Item>
+              </Link>
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration= {500}
+              >
+                <Menu.Item as='a'>Contact</Menu.Item>
+              </Link>
 
               <Menu.Menu position='right'>
                 <Dropdown text='Dropdown' pointing className='link item'>
