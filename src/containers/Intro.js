@@ -1,5 +1,6 @@
 import React from 'react';
-import {  Button }from 'semantic-ui-react'
+import { Button }from 'semantic-ui-react'
+import { Link } from 'react-scroll'
 
 class Intro extends React.Component {
   render(){
@@ -9,7 +10,16 @@ class Intro extends React.Component {
           <div className='intro-text'>
             <h1>Hello, I'm Soyeong!</h1>
             <h1>Full Stack Software Engineer based in New York</h1>
-          <Button className='view-work'>View My Work</Button>
+            <Link
+              activeClass="active"
+              to="about"
+              spy={true}
+              smooth={true}
+              offset={-64}
+              duration= {500}
+            >
+              <Button className='view-work'>View My Work</Button>
+            </Link>
           </div>
         </div>
       </div>

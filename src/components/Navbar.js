@@ -73,7 +73,7 @@ export default class StickyLayout extends Component {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-20}
                 duration= {500}
               >
                 <Menu.Item as='a'>About</Menu.Item>
@@ -83,18 +83,17 @@ export default class StickyLayout extends Component {
                 to="project"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-64}
                 duration= {500}
               >
                 <Menu.Item as='a'>Project</Menu.Item>
               </Link>
-
               <Link
                 activeClass="active"
                 to="blog"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-64}
                 duration= {500}
               >
                 <Menu.Item as='a'>Blog</Menu.Item>
