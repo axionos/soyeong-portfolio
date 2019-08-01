@@ -15,7 +15,7 @@ class Intro extends React.Component {
               to="about"
               spy={true}
               smooth={true}
-              offset={-64}
+              offset={0}
               duration= {500}
             >
               <Button className='view-work'>View My Work</Button>

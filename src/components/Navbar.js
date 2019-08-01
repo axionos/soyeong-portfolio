@@ -66,14 +66,14 @@ export default class StickyLayout extends Component {
                 offset={0}
                 duration= {500}
               >
-                <Menu.Item header>Home</Menu.Item>
+                <Menu.Item>Home</Menu.Item>
               </Link>
               <Link
                 activeClass="active"
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={-20}
+                offset={0}
                 duration= {500}
               >
                 <Menu.Item as='a'>About</Menu.Item>
@@ -83,7 +83,7 @@ export default class StickyLayout extends Component {
                 to="project"
                 spy={true}
                 smooth={true}
-                offset={-64}
+                offset={0}
                 duration= {500}
               >
                 <Menu.Item as='a'>Project</Menu.Item>
@@ -93,7 +93,7 @@ export default class StickyLayout extends Component {
                 to="blog"
                 spy={true}
                 smooth={true}
-                offset={-64}
+                offset={0}
                 duration= {500}
               >
                 <Menu.Item as='a'>Blog</Menu.Item>
@@ -103,7 +103,7 @@ export default class StickyLayout extends Component {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={1000}
                 duration= {500}
               >
                 <Menu.Item as='a'>Contact</Menu.Item>

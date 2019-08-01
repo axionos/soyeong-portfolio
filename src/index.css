@@ -22,16 +22,17 @@
   padding: 13px 20px;
   font-size: 16px;
 }
+
+.ui.container.nav-container a.active {
+  font-weight: bold;
+  border-bottom: 1px solid red;
+}
+
 /*/// INTRO ///*/
 
 .intro{
   min-height: 1080px;
-  /* display: -webkit-flex;
-  display: -ms-flex;
-  display: flex; */
-  /* -ms-align-items: center;
-  align-items: center; */
-  /* justify-content: center; */
+
 }
 
 .intro-text-container {
@@ -57,7 +58,8 @@
 }
 
 .about-me {
-  padding: 100px 0;
+  padding: 170px 0;
+  height: 100vh;
 }
 
 .about-me p {
@@ -113,8 +115,9 @@
 /*/// PROJECT ///*/
 
 .portfolio {
-  padding: 100px 0;
+  padding: 150px 0;
   background: #eee;
+  height: 100vh;
 }
 
 .project-modal{
@@ -166,15 +169,17 @@ p:first-child {
 /*/// BLOG ///*/
 
 .blog {
-  padding: 100px 0;
+  padding: 150px 0;
   background: #fff;
+  height: 100vh;
 }
 
 /*/// CONTACT ///*/
 
 .contact {
-  padding: 100px 0;
+  padding: 150px 0;
   background-color: #eee;
+  height: 100vh;
 }
 
 .submit-btn-container {
