@@ -67,59 +67,65 @@ move = () => {
 
   render(){
     return (
-      <Container>
-        <h1>About Me</h1>
-        <Grid stackable columns={2}>
-          <Grid.Column width={7} className='photos-container'>
-            <Segment>
-              <div className='photo-1'/>
+      <div className='about-me'>
+        <Container>
+          <h1 className='page-title'>About Me</h1>
+          <Grid stackable columns={2}>
+            <Grid.Column width={7} className='photos-container'>
+              <Segment>
+                <div className='photo-1'/>
 
-            </Segment>
-          </Grid.Column>
-          <Grid.Column width={9} className='skills-container'>
-            <button onClick={this.move}>click</button>
-            <div className='bar-container'>
-              <div className='js label'>JavaScript</div>
-              <div id="jsBar" className='bar'>0%</div>
+              </Segment>
+            </Grid.Column>
+            <Grid.Column width={9} className='skills-container'>
+              <button onClick={this.move}>click</button>
+              <div className='bar-container'>
+                <div className='js label'>JavaScript</div>
+                <div id="jsBar" className='bar'>0%</div>
+              </div>
+              <div className='bar-container'>
+                <div className='react label'>React</div>
+                <div id="reactBar" className='bar'>0%</div>
+              </div>
+              <div className='bar-container'>
+                <div className='ruby label'>Ruby/Rails</div>
+                <div id="rubyBar" className='bar'>0%</div>
+              </div>
+              <div className='bar-container'>
+                <div className='html label'>HTML</div>
+                <div id="htmlBar" className='bar'>0%</div>
+              </div>
+              <div className='bar-container'>
+                <div className='css label'>CSS</div>
+                <div id="cssBar" className='bar'>0%</div>
+              </div>
+              <div className='bar-container'>
+                <div className='ui-design label'>UI Design</div>
+                <div id="uiBar" className='bar'>0%</div>
+              </div>
+              <div className='bar-container'>
+                <div className='photoshop label'>Photoshop</div>
+                <div id="photoshopBar" className='bar'>0%</div>
+              </div>
+              <div className='bar-container'>
+                <div className='illustrator label'>Illustrator</div>
+                <div id="illustratorBar" className='bar'>0%</div>
+              </div>
+            </Grid.Column>
+          </Grid>
+          <div className='about-me-container'>
+            <div className='icon-container'>
+              <a href='https://www.linkedin.com/in/soyeongoh/' target='_blank' rel='noopener noreferrer'>
+                <Icon name='linkedin' size='big' />
+              </a>
+              <a href='https://github.com/axionos' target='_blank' rel='noopener noreferrer'>
+                <Icon name='github square' size='big'/>
+              </a>
             </div>
-            <div className='bar-container'>
-              <div className='react label'>React</div>
-              <div id="reactBar" className='bar'>0%</div>
-            </div>
-            <div className='bar-container'>
-              <div className='ruby label'>Ruby/Rails</div>
-              <div id="rubyBar" className='bar'>0%</div>
-            </div>
-            <div className='bar-container'>
-              <div className='html label'>HTML</div>
-              <div id="htmlBar" className='bar'>0%</div>
-            </div>
-            <div className='bar-container'>
-              <div className='css label'>CSS</div>
-              <div id="cssBar" className='bar'>0%</div>
-            </div>
-            <div className='bar-container'>
-              <div className='ui-design label'>UI Design</div>
-              <div id="uiBar" className='bar'>0%</div>
-            </div>
-            <div className='bar-container'>
-              <div className='photoshop label'>Photoshop</div>
-              <div id="photoshopBar" className='bar'>0%</div>
-            </div>
-            <div className='bar-container'>
-              <div className='illustrator label'>Illustrator</div>
-              <div id="illustratorBar" className='bar'>0%</div>
-            </div>
-          </Grid.Column>
-        </Grid>
-        <div className='about-me-container'>
-          <p>Full stack software engineer with a passion for continuous learning and building a sophisticated web application. With experience in Ruby on Rails, JavaScript, React and CSS3 and background as a web designer, I discovered web development through utilizing my skill to visualize web apps. I'm a strong collaborator and I bring exceptional skills in problem-solving and communication through extensive experiences from online marketing and customer service.</p>
-          <span className='icon-container'>
-            <Icon name='linkedin' size='huge'/>
-            <Icon name='github square' size='huge'/>
-          </span>
-        </div>
-      </Container>
+            <p>Full stack software engineer with a passion for continuous learning and building a sophisticated web application. With experience in Ruby on Rails, JavaScript, React and CSS3 and background as a web designer, I discovered web development through utilizing my skill to visualize web apps. I'm a strong collaborator and I bring exceptional skills in problem-solving and communication through extensive experiences from online marketing and customer service.</p>
+          </div>
+        </Container>
+      </div>
     );
   }
 }

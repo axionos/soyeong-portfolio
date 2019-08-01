@@ -5,13 +5,10 @@ class Blog extends React.Component {
   render(){
     return (
       <div className="blog">
-
-      <Container>
-        <h1>Blog</h1>
-        <div id="medium-widget"></div>
-        
-
-      </Container>
+        <Container>
+          <h1 className='page-title'>Blog</h1>
+          <div id="medium-widget"></div>
+        </Container>
       </div>
     );
   }
