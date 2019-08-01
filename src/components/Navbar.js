@@ -103,7 +103,7 @@ export default class StickyLayout extends Component {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={1000}
+                offset={0}
                 duration= {500}
               >
                 <Menu.Item as='a'>Contact</Menu.Item>
