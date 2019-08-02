@@ -8,8 +8,7 @@ import { Link } from 'react-scroll'
 
 const menuStyle = {
   // borderTop: '1px solid #ddd',
-  // borderBottom: '1px solid #ddd',
-  border: 'none',
+  borderBottom: '4px solid #43e072',
   borderRadius: 0,
   boxShadow: 'none',
   // marginBottom: '1em',
@@ -19,7 +18,7 @@ const menuStyle = {
 
 const fixedMenuStyle = {
   backgroundColor: '#2d2d2d',
-  borderBottom: '3px solid #43e072',
+  borderBottom: '4px solid #43e072',
   // boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
   paddingTop: '10px',
   paddingBottom: '10px'
