@@ -18,9 +18,9 @@ const menuStyle = {
 }
 
 const fixedMenuStyle = {
-  backgroundColor: '#fff',
-  border: '1px solid #ddd',
-  boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
+  backgroundColor: '#2d2d2d',
+  borderBottom: '3px solid #43e072',
+  // boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
   paddingTop: '10px',
   paddingBottom: '10px'
 }
