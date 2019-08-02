@@ -19,13 +19,19 @@
 }
 
 .ui.menu .item{
-  padding: 13px 20px;
+  padding: 10px 20px;
   font-size: 16px;
+  color: #777;
 }
 
-.ui.container.nav-container a.active {
+.ui.menu .link a:hover {
+  color: #58C9B9;
+  
+}
+
+.ui.container.nav-container a.active .item {
   font-weight: bold;
-  border-bottom: 1px solid red;
+  color: #519D9E;
 }
 
 /*/// INTRO ///*/
