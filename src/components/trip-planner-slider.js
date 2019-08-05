@@ -97,10 +97,7 @@ class TripPlannerSlider extends React.Component {
         description: 'Click to play My Trip Planner demo video',
         renderItem: this._renderVideo.bind(this)
       },
-      {
-        original: Login,
-        thumbnail: Login,
-      },
+      
       {
         original: MyTrip,
         thumbnail: MyTrip

@@ -160,9 +160,14 @@
   display: none;
 }
 
+.image-gallery-slide .image-gallery-description {
+  font-size: 20px;
+  padding: 20px 30px;
+}
+
 .demo-video {
   width: 100%;
-  height: 500px;
+  height: 481px;
 }
 
 .project-detail {
@@ -179,7 +184,7 @@ p:first-child {
 
 
 .skill-used{
-  background-color: #aaa;
+  background-color: #999;
   color: #fff;
   padding: 5px 10px;
   margin: 20px 5px 10px 0;
