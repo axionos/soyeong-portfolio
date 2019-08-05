@@ -136,7 +136,6 @@
   min-height: 850px;
 }
 
-
 .description {
   padding: 30px 20px;
 }
@@ -155,6 +154,10 @@
 
 .project-img-container img:hover {
   transform: scale(1.2);
+}
+
+.image-gallery-play-button {
+  display: none;
 }
 
 .demo-video {
