@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Grid, Modal, Image, Header }from 'semantic-ui-react'
+import TripPlannerSlider from '../components/trip-planner-slider'
 import tripPlannerThumbnail from '../img/my-trip-planner-screenshot/itinerarylist.png'
 
 
@@ -23,7 +24,8 @@ class Portfolio extends React.Component {
                 }
               >
                 <Modal.Content className='project-modal'>
-                  <iframe title='my-trip-planner' className='demo-video' src="https://www.youtube.com/embed/j-LVemjrZx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>
+                  {/*<iframe title='my-trip-planner' className='demo-video' src="https://www.youtube.com/embed/j-LVemjrZx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>*/}
+                  <TripPlannerSlider />
                   <Modal.Description>
                     <h2>My Trip Planner</h2>
                     <div className='project-detail'>
