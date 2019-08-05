@@ -8,8 +8,7 @@ import { Link } from 'react-scroll'
 
 const menuStyle = {
   // borderTop: '1px solid #ddd',
-  // borderBottom: '1px solid #ddd',
-  border: 'none',
+  borderBottom: '4px solid #43e072',
   borderRadius: 0,
   boxShadow: 'none',
   // marginBottom: '1em',
@@ -18,9 +17,9 @@ const menuStyle = {
 }
 
 const fixedMenuStyle = {
-  backgroundColor: '#fff',
-  border: '1px solid #ddd',
-  boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
+  backgroundColor: '#2d2d2d',
+  borderBottom: '4px solid #43e072',
+  // boxShadow: '0px 3px 5px rgba(0, 0, 0, 0.2)',
   paddingTop: '10px',
   paddingBottom: '10px'
 }
@@ -65,6 +64,7 @@ export default class StickyLayout extends Component {
                 smooth={true}
                 offset={0}
                 duration= {500}
+                className='link'
               >
                 <Menu.Item>Home</Menu.Item>
               </Link>
@@ -75,6 +75,7 @@ export default class StickyLayout extends Component {
                 smooth={true}
                 offset={0}
                 duration= {500}
+                className='link'
               >
                 <Menu.Item as='a'>About</Menu.Item>
               </Link>
@@ -85,6 +86,7 @@ export default class StickyLayout extends Component {
                 smooth={true}
                 offset={0}
                 duration= {500}
+                className='link'
               >
                 <Menu.Item as='a'>Project</Menu.Item>
               </Link>
@@ -95,6 +97,7 @@ export default class StickyLayout extends Component {
                 smooth={true}
                 offset={0}
                 duration= {500}
+                className='link'
               >
                 <Menu.Item as='a'>Blog</Menu.Item>
               </Link>
@@ -105,6 +108,7 @@ export default class StickyLayout extends Component {
                 smooth={true}
                 offset={0}
                 duration= {500}
+                className='link'
               >
                 <Menu.Item as='a'>Contact</Menu.Item>
               </Link>
