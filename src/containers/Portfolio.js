@@ -1,7 +1,11 @@
 import React from 'react';
 import { Container, Grid, Modal, Image, Header }from 'semantic-ui-react'
 import TripPlannerSlider from '../components/trip-planner-slider'
+import BobaFinderSlider from '../components/boba-finder-slider'
+
+
 import tripPlannerThumbnail from '../img/my-trip-planner-screenshot/itinerarylist.png'
+import bobaFinderThumbnail from '../img/boba-finder-screenshot/main.png'
 
 
 class Portfolio extends React.Component {
@@ -53,10 +57,14 @@ class Portfolio extends React.Component {
               <Modal closeIcon
                 size='medium'
                 dimmer='blurring'
-                trigger={<div className='project-img-container'>Boba Finder</div>}
+                trigger={
+                  <div className='project-img-container'>
+                    <img src={bobaFinderThumbnail} alt='Boba Finder' />
+                  </div>
+                }
               >
                 <Modal.Content className='project-modal'>
-                  <iframe title='boba-finder' className='demo-video' src="https://www.youtube.com/embed/qr4X7a85PrA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <BobaFinderSlider />
                   <Modal.Description>
                     <h2>Boba Finder</h2>
                     <div className='project-detail'>
