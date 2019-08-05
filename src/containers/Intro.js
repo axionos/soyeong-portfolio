@@ -17,6 +17,7 @@ class Intro extends React.Component {
               smooth={true}
               offset={0}
               duration= {500}
+              className='link'
             >
               <Button className='view-work'>View My Work</Button>
             </Link>
