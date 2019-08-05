@@ -6,6 +6,7 @@ import BobaFinderSlider from '../components/boba-finder-slider'
 
 import tripPlannerThumbnail from '../img/my-trip-planner-screenshot/itinerarylist.png'
 import bobaFinderThumbnail from '../img/boba-finder-screenshot/main.png'
+import motorImpactThumbnail from '../img/motor-impact-screenshot/main.png'
 
 
 class Portfolio extends React.Component {
@@ -165,7 +166,11 @@ class Portfolio extends React.Component {
               <Modal closeIcon
                 size='medium'
                 dimmer='blurring'
-                trigger={<div className='project-img-container'>Show Modal</div>}
+                trigger={
+                  <div className='project-img-container'>
+                    <img src={motorImpactThumbnail} alt='Motor Impact of Canada' />
+                  </div>
+                }
               >
                 <Modal.Header>Select a Photo</Modal.Header>
                 <Modal.Content className='project-modal'>
