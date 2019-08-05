@@ -3,6 +3,7 @@ import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
 import Login from '../img/my-trip-planner-screenshot/login.png';
 import MyTrip from '../img/my-trip-planner-screenshot/mytrip.png'
+import AddTrip from '../img/my-trip-planner-screenshot/addtrip.png'
 import EditTrip from '../img/my-trip-planner-screenshot/edittrip.png'
 import Itineraries from '../img/my-trip-planner-screenshot/itinerarylist.png'
 import AddItinerary from '../img/my-trip-planner-screenshot/additinerary.png'
@@ -97,10 +98,14 @@ class TripPlannerSlider extends React.Component {
         description: 'Click to play My Trip Planner demo video',
         renderItem: this._renderVideo.bind(this)
       },
-      
+
       {
         original: MyTrip,
         thumbnail: MyTrip
+      },
+      {
+        original: AddTrip,
+        thumbnail: AddTrip
       },
       {
         original: EditTrip,
