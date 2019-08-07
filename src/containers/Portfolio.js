@@ -2,10 +2,12 @@ import React from 'react';
 import { Container, Grid, Modal, Image, Header }from 'semantic-ui-react'
 import TripPlannerSlider from '../components/trip-planner-slider'
 import BobaFinderSlider from '../components/boba-finder-slider'
+import CocktailMenuSlider from '../components/cocktail-menu-slider'
 
 
 import tripPlannerThumbnail from '../img/my-trip-planner-screenshot/itinerarylist.png'
 import bobaFinderThumbnail from '../img/boba-finder-screenshot/main.png'
+import cocktailMenuThumbnail from '../img/cocktail-menu-screenshot/mood.png'
 import motorImpactThumbnail from '../img/motor-impact-screenshot/main.png'
 
 
@@ -90,10 +92,14 @@ class Portfolio extends React.Component {
               <Modal closeIcon
                 size='medium'
                 dimmer='blurring'
-                trigger={<div className='project-img-container'>Dope Cocktail Menu</div>}
+                trigger={
+                  <div className='project-img-container'>
+                    <img src={cocktailMenuThumbnail} alt='Boba Finder' />
+                  </div>
+                }
               >
                 <Modal.Content className='project-modal'>
-                  <iframe title='dope-cocktail-menu' className='demo-video' src="https://www.youtube.com/embed/YVpJimVz3iE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <CocktailMenuSlider />
                   <Modal.Description>
                     <h2>Dope Cocktail Menu</h2>
                     <div className='project-detail'>

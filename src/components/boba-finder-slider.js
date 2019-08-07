@@ -5,9 +5,6 @@ import Login from '../img/boba-finder-screenshot/login.png';
 import Main from '../img/boba-finder-screenshot/main.png'
 import KFTea from '../img/boba-finder-screenshot/kftea.png'
 import Gongcha from '../img/boba-finder-screenshot/gongcha.png'
-import Vivi from '../img/boba-finder-screenshot/vivi.png'
-import Coco from '../img/boba-finder-screenshot/coco.png'
-import BobaGuys from '../img/boba-finder-screenshot/bobaguys.png'
 import Profile from '../img/boba-finder-screenshot/profile.png'
 import SignUp from '../img/boba-finder-screenshot/signup.png'
 
@@ -113,18 +110,7 @@ class TripPlannerSlider extends React.Component {
         original: Gongcha,
         thumbnail: Gongcha
       },
-      {
-        original: Vivi,
-        thumbnail: Vivi
-      },
-      {
-        original: Coco,
-        thumbnail: Coco
-      },
-      {
-        original: BobaGuys,
-        thumbnail: BobaGuys
-      },
+      
       {
         original: Profile,
         thumbnail: Profile
