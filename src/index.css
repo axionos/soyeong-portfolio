@@ -197,6 +197,16 @@
   padding: 10px 0;
 }
 
+.project-links a i:hover {
+  color: #43e072;
+}
+
+.project-links i {
+  font-size: 24px;
+
+}
+
+
 .project-detail {
   padding: 10px 0 20px 0;
 }
