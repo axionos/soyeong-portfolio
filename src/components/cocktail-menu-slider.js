@@ -94,7 +94,7 @@ class TripPlannerSlider extends React.Component {
       {
         original:Welcome,
         thumbnail: Welcome,
-        embedUrl: 'https://www.youtube.com/embed/qr4X7a85PrA?autoplay=1&showinfo=0',
+        embedUrl: 'https://www.youtube.com/embed/YVpJimVz3iE?autoplay=1&showinfo=0',
         description: 'Click to play Dope Cocktail Menu demo video',
         renderItem: this._renderVideo.bind(this)
       },

@@ -3,11 +3,12 @@ import { Container, Grid, Modal, Image, Header }from 'semantic-ui-react'
 import TripPlannerSlider from '../components/trip-planner-slider'
 import BobaFinderSlider from '../components/boba-finder-slider'
 import CocktailMenuSlider from '../components/cocktail-menu-slider'
-
+import FundRunSlider from '../components/fundrun-slider'
 
 import tripPlannerThumbnail from '../img/my-trip-planner-screenshot/itinerarylist.png'
 import bobaFinderThumbnail from '../img/boba-finder-screenshot/main.png'
 import cocktailMenuThumbnail from '../img/cocktail-menu-screenshot/mood.png'
+import fundRunThumbnail from '../img/fund-run-screenshot/marathon.png'
 import motorImpactThumbnail from '../img/motor-impact-screenshot/main.png'
 
 
@@ -94,7 +95,40 @@ class Portfolio extends React.Component {
                 dimmer='blurring'
                 trigger={
                   <div className='project-img-container'>
-                    <img src={cocktailMenuThumbnail} alt='Boba Finder' />
+                    <img src={fundRunThumbnail} alt='Fund Run' />
+                  </div>
+                }
+              >
+                <Modal.Content className='project-modal'>
+
+                  <FundRunSlider />
+                  <Modal.Description>
+                    <h2>Fund Run</h2>
+                    <div className='project-detail'>
+                      <p>Fund Run is marathon charity app built with <span className='bold'>pure Ruby on Rails</span>, which allows a user to follow a marathon they're interested in, make a donation on a charity and check the follow status and donation stat on the user profile page.</p>
+                      <p>● Developed Ruby on Rails frontend and backend for users, marathons, charities, follow, and donations</p>
+                      <p>● Implemented user interface employing Bootstrap and custom CSS</p>
+                    </div>
+                    <div className='skills-used'>
+                      <span className='skill-used'>Ruby on Rails</span>
+                      <span className='skill-used'>Bootstrap</span>
+                      <span className='skill-used'>Custom CSS</span>
+                    </div>
+                  </Modal.Description>
+                </Modal.Content>
+              </Modal>
+            </Grid.Column>
+
+          </Grid.Row>
+
+          <Grid.Row>
+            <Grid.Column width={5}>
+              <Modal closeIcon
+                size='medium'
+                dimmer='blurring'
+                trigger={
+                  <div className='project-img-container'>
+                    <img src={cocktailMenuThumbnail} alt='Dope Cocktail Menu' />
                   </div>
                 }
               >
@@ -118,29 +152,23 @@ class Portfolio extends React.Component {
                 </Modal.Content>
               </Modal>
             </Grid.Column>
-          </Grid.Row>
-
-          <Grid.Row>
             <Grid.Column width={5}>
               <Modal closeIcon
                 size='medium'
                 dimmer='blurring'
-                trigger={<div className='project-img-container'>Fund Run</div>}
+                trigger={
+                  <div className='project-img-container'>
+                    <img src={motorImpactThumbnail} alt='Motor Impact of Canada' />
+                  </div>
+                }
               >
+                <Modal.Header>Select a Photo</Modal.Header>
                 <Modal.Content className='project-modal'>
                   <Image wrapped size='medium' src='/images/avatar/medium/rachel.png' />
                   <Modal.Description>
-                    <h2>Fund Run</h2>
-                    <div className='project-detail'>
-                      <p>Fund Run is marathon charity app built with <span className='bold'>pure Ruby on Rails</span>, which allows a user to follow a marathon they're interested in, make a donation on a charity and check the follow status and donation stat on the user profile page.</p>
-                      <p>● Developed Ruby on Rails frontend and backend for users, marathons, charities, follow, and donations</p>
-                      <p>● Implemented user interface employing Bootstrap and custom CSS</p>
-                    </div>
-                    <div className='skills-used'>
-                      <span className='skill-used'>Ruby on Rails</span>
-                      <span className='skill-used'>Bootstrap</span>
-                      <span className='skill-used'>Custom CSS</span>
-                    </div>
+                    <Header>Default Profile Image</Header>
+                    <p>We've found the following gravatar image associated with your e-mail address.</p>
+                    <div className='skills-used'></div>
                   </Modal.Description>
                 </Modal.Content>
               </Modal>
@@ -168,27 +196,7 @@ class Portfolio extends React.Component {
                 </Modal.Content>
               </Modal>
             </Grid.Column>
-            <Grid.Column width={5}>
-              <Modal closeIcon
-                size='medium'
-                dimmer='blurring'
-                trigger={
-                  <div className='project-img-container'>
-                    <img src={motorImpactThumbnail} alt='Motor Impact of Canada' />
-                  </div>
-                }
-              >
-                <Modal.Header>Select a Photo</Modal.Header>
-                <Modal.Content className='project-modal'>
-                  <Image wrapped size='medium' src='/images/avatar/medium/rachel.png' />
-                  <Modal.Description>
-                    <Header>Default Profile Image</Header>
-                    <p>We've found the following gravatar image associated with your e-mail address.</p>
-                    <div className='skills-used'></div>
-                  </Modal.Description>
-                </Modal.Content>
-              </Modal>
-            </Grid.Column>
+
           </Grid.Row>
         </Grid>
       </Container>
