@@ -113,7 +113,7 @@ export default class StickyLayout extends Component {
                 <Menu.Item as='a'>Contact</Menu.Item>
               </Link>
 
-              <Menu.Menu position='right'>
+              <Menu.Menu position='right' className='dropdown-nav'>
                 <Dropdown text='Dropdown' pointing className='link item'>
                   <Dropdown.Menu>
                     <Dropdown.Item>Home</Dropdown.Item>
