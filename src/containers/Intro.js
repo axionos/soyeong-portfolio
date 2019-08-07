@@ -4,6 +4,7 @@ import { Link } from 'react-scroll'
 
 class Intro extends React.Component {
   render(){
+    console.log('intro props', this.props);
     return (
       <div className="intro" id='intro'>
         <div className='intro-text-container'>
@@ -18,8 +19,9 @@ class Intro extends React.Component {
               offset={0}
               duration= {500}
               className='link'
+              onClick={this.props.showSkills}
             >
-              <Button className='view-work'>View My Work</Button>
+              <Button className='view-work' onClick={this.props.showSkills}>View My Work</Button>
             </Link>
           </div>
         </div>

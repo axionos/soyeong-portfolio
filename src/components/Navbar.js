@@ -26,7 +26,7 @@ const fixedMenuStyle = {
 
 export default class StickyLayout extends Component {
   state = {
-    menuFixed: false,
+    menuFixed: false
   }
 
   stickTopMenu = () => this.setState({ menuFixed: true })
@@ -36,6 +36,7 @@ export default class StickyLayout extends Component {
   render() {
     const { menuFixed } = this.state
 
+    console.log('navbar props', this.props)
     return (
       <div className='nav-wrapper'>
         {/* Heads up, style below isn't necessary for correct work of example, simply our docs defines other
@@ -76,8 +77,9 @@ export default class StickyLayout extends Component {
                 offset={0}
                 duration= {500}
                 className='link'
+                onClick={this.props.showSkills}
               >
-                <Menu.Item as='a'>About</Menu.Item>
+                <Menu.Item as='a' onClick={this.props.showSkills}>About</Menu.Item>
               </Link>
               <Link
                 activeClass="active"
@@ -101,17 +103,6 @@ export default class StickyLayout extends Component {
               >
                 <Menu.Item as='a'>Blog</Menu.Item>
               </Link>
-              <Link
-                activeClass="active"
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration= {500}
-                className='link'
-              >
-                <Menu.Item as='a'>Contact</Menu.Item>
-              </Link>
 
               <Menu.Menu position='right' className='dropdown-nav'>
                 <Dropdown text='Dropdown' pointing className='link item'>
@@ -120,7 +111,6 @@ export default class StickyLayout extends Component {
                     <Dropdown.Item>About</Dropdown.Item>
                     <Dropdown.Item>Portfolio</Dropdown.Item>
                     <Dropdown.Item>Blog</Dropdown.Item>
-                    <Dropdown.Item>Contact</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </Menu.Menu>

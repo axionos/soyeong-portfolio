@@ -4,18 +4,27 @@ import Navbar from './components/Navbar'
 import About from './containers/About'
 import Portfolio from './containers/Portfolio'
 import Blog from './containers/Blog'
-import Contact from './containers/Contact'
+// import Contact from './containers/Contact'
 
 class App extends React.Component {
+  state = {
+    skillsVisible: false
+  }
+
+  showSkills = () => {
+    return this.state.skillsVisible ? null : this.setState({skillsVisible: true})
+  }
+
+
   render(){
+    console.log('app state', this.state);
     return (
       <div className="app">
-        <Intro />
-        <Navbar />
-        <About />
+        <Intro showSkills={this.showSkills}/>
+        <Navbar showSkills={this.showSkills}/>
+        <About showStatus={this.state.skillsVisible}/>
         <Portfolio />
         <Blog />
-        <Contact />
       </div>
     );
   }
