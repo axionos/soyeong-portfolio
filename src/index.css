@@ -40,6 +40,9 @@
   color: #43e072;
 }
 
+.ui.menu:not(.vertical) .right.item, .ui.menu:not(.vertical) .right.menu.dropdown-nav {
+  display: none;
+}
 /*/// INTRO ///*/
 
 .intro{

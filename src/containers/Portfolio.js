@@ -5,6 +5,7 @@ import BobaFinderSlider from '../components/boba-finder-slider'
 import CocktailMenuSlider from '../components/cocktail-menu-slider'
 import FundRunSlider from '../components/fundrun-slider'
 import CityGuruSlider from '../components/city-guru-slider'
+import MICSlider from '../components/mic-slider'
 
 import tripPlannerThumbnail from '../img/my-trip-planner-screenshot/itinerarylist.png'
 import bobaFinderThumbnail from '../img/boba-finder-screenshot/main.png'
@@ -164,13 +165,19 @@ class Portfolio extends React.Component {
                   </div>
                 }
               >
-                <Modal.Header>Select a Photo</Modal.Header>
                 <Modal.Content className='project-modal'>
-                  <Image wrapped size='medium' src='/images/avatar/medium/rachel.png' />
+                  <MICSlider />
                   <Modal.Description>
-                    <Header>Default Profile Image</Header>
-                    <p>We've found the following gravatar image associated with your e-mail address.</p>
-                    <div className='skills-used'></div>
+                    <h2>Motor Impact of Canada</h2>
+                    <p>As a frontend web developer, I designed fully responsive modern B2B eCommerce website for the company to provide a user-friendly and easily accessible user experience.</p>
+                    <div className='skills-used'>
+                      <span className='skill-used'>jQuery</span>
+                      <span className='skill-used'>Google Map API</span>
+                      <span className='skill-used'>Bootstrap</span>
+                      <span className='skill-used'>PHPMailer</span>
+                      <span className='skill-used first'>HTML</span>
+                      <span className='skill-used'>Custom CSS</span>
+                    </div>
                   </Modal.Description>
                 </Modal.Content>
               </Modal>
