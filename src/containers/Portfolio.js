@@ -38,7 +38,7 @@ class Portfolio extends React.Component {
                   {/*<iframe title='my-trip-planner' className='demo-video' src="https://www.youtube.com/embed/j-LVemjrZx8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen"></iframe>*/}
                   <TripPlannerSlider />
                   <Modal.Description>
-                    <h2>My Trip Planner</h2>
+                    <h2 className='project-title'>My Trip Planner</h2>
                     <div className='project-detail'>
                       <p> My Trip Planner is my solo project that allows a user to easily organize daily trip itineraries and display them on the map. It was built with React, Ruby on Rails, Redux, Google Place and Google Maps API.</p>
                       <p>● Developed a Rails API backend with endpoints for users, trips, days, and items</p>
@@ -73,7 +73,7 @@ class Portfolio extends React.Component {
                 <Modal.Content className='project-modal'>
                   <BobaFinderSlider />
                   <Modal.Description>
-                    <h2>Boba Finder</h2>
+                    <h2 className='project-title'>Boba Finder</h2>
                     <div className='project-detail'>
                       <p>By using <span className='bold'>Foursquare API</span>, Bobafinder lets a user to find a bubble tea stores in NYC, filter the search result on different brands, save favorite stores and visited stores on the user profile.</p>
                       <p>● Developed a Rails API backend with endpoints for users, stores, and user-stores </p>
@@ -106,7 +106,7 @@ class Portfolio extends React.Component {
 
                   <FundRunSlider />
                   <Modal.Description>
-                    <h2>Fund Run</h2>
+                    <h2 className='project-title'>Fund Run</h2>
                     <div className='project-detail'>
                       <p>Fund Run is marathon charity app built with <span className='bold'>pure Ruby on Rails</span>, which allows a user to follow a marathon they're interested in, make a donation on a charity and check the follow status and donation stat on the user profile page.</p>
                       <p>● Developed Ruby on Rails frontend and backend for users, marathons, charities, follow, and donations</p>
@@ -138,7 +138,7 @@ class Portfolio extends React.Component {
                 <Modal.Content className='project-modal'>
                   <CocktailMenuSlider />
                   <Modal.Description>
-                    <h2>Dope Cocktail Menu</h2>
+                    <h2 className='project-title'>Dope Cocktail Menu</h2>
                     <div className='project-detail'>
                       <p>Dope Cocktail Menu is an interactive cocktail recipe menu based on a user's mood. It allows the user to view, like, comment on a recipe, or select a different mood from the menu.</p>
                       <p>● Developed Rails API backend with endpoints for cocktails, comments, mood and likes</p>
@@ -168,8 +168,14 @@ class Portfolio extends React.Component {
                 <Modal.Content className='project-modal'>
                   <MICSlider />
                   <Modal.Description>
-                    <h2>Motor Impact of Canada</h2>
-                    <p>As a frontend web developer, I designed fully responsive modern B2B eCommerce website for the company to provide a user-friendly and easily accessible user experience.</p>
+                    <h2 className='project-title'>Motor Impact of Canada</h2>
+                    <div className='project-links'>
+                      <a href='https://www.oebodyparts.com' target='_blank'>
+                        <i class="fas fa-external-link-alt"></i>
+                      </a>
+                    </div>
+                    <p>● Designed fully responsive modern B2B eCommerce website for the company. </p>
+                    <p>● Provide a user-friendly and easily accessible user experience.</p>
                     <div className='skills-used'>
                       <span className='skill-used'>jQuery</span>
                       <span className='skill-used'>Google Map API</span>
@@ -195,7 +201,7 @@ class Portfolio extends React.Component {
                 <Modal.Content className='project-modal'>
                   <CityGuruSlider />
                   <Modal.Description>
-                    <h2>City Guru</h2>
+                    <h2 className='project-title'>City Guru</h2>
                     <div className='project-detail'>
                       <p>City Guru is CLI app built with pure Ruby code. It uses <span className='bold'>Teleport API</span> and allows a user to search for a basic information, salary information, and quality of living information of an urban city the user looks up.</p>
                       <p>● Developed with pure Ruby backend</p>

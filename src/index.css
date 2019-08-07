@@ -162,9 +162,9 @@
   transform: scale(1.1);
 }
 
-.image-gallery-slide.center {
+/* .image-gallery-slide.center {
   border: 1px solid #ddd;
-}
+} */
 
 .image-gallery-thumbnails-wrapper.bottom {
   padding-top: 20px;
@@ -184,6 +184,19 @@
   height: 481px;
 }
 
+.project-title {
+  display: inline-block;
+}
+
+.project-links {
+  display: inline-block;
+  margin: 10px;
+}
+
+.project-links a {
+  padding: 10px 0;
+}
+
 .project-detail {
   padding: 10px 0 20px 0;
 }
@@ -196,6 +209,9 @@ p:first-child {
   margin-bottom: 15px;
 }
 
+.skills-used {
+  padding: 10px 0
+}
 
 .skill-used{
   background-color: #ddd;
