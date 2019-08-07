@@ -9,7 +9,7 @@ import Fun from '../img/cocktail-menu-screenshot/fun.png'
 import Classic from '../img/cocktail-menu-screenshot/classic.png'
 import Recipe from '../img/cocktail-menu-screenshot/recipe.png'
 
-class TripPlannerSlider extends React.Component {
+class CocktailMenuSlider extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -133,4 +133,4 @@ class TripPlannerSlider extends React.Component {
 
 }
 
-export default TripPlannerSlider;
+export default CocktailMenuSlider;

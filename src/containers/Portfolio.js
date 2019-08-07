@@ -4,12 +4,14 @@ import TripPlannerSlider from '../components/trip-planner-slider'
 import BobaFinderSlider from '../components/boba-finder-slider'
 import CocktailMenuSlider from '../components/cocktail-menu-slider'
 import FundRunSlider from '../components/fundrun-slider'
+import CityGuruSlider from '../components/city-guru-slider'
 
 import tripPlannerThumbnail from '../img/my-trip-planner-screenshot/itinerarylist.png'
 import bobaFinderThumbnail from '../img/boba-finder-screenshot/main.png'
 import cocktailMenuThumbnail from '../img/cocktail-menu-screenshot/mood.png'
 import fundRunThumbnail from '../img/fund-run-screenshot/marathon.png'
 import motorImpactThumbnail from '../img/motor-impact-screenshot/main.png'
+import cityGuruThumbnail from '../img/city-guru-screenshot/login.png'
 
 
 class Portfolio extends React.Component {
@@ -177,10 +179,14 @@ class Portfolio extends React.Component {
               <Modal closeIcon
                 size='medium'
                 dimmer='blurring'
-                trigger={<div className='project-img-container'>City Guru</div>}
+                trigger={
+                  <div className='project-img-container'>
+                    <img src={cityGuruThumbnail} alt='Motor Impact of Canada' />
+                  </div>
+                }
               >
                 <Modal.Content className='project-modal'>
-                  <Image wrapped size='medium' src='/images/avatar/medium/rachel.png' />
+                  <CityGuruSlider />
                   <Modal.Description>
                     <h2>City Guru</h2>
                     <div className='project-detail'>

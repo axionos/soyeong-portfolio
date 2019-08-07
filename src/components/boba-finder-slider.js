@@ -8,7 +8,7 @@ import Gongcha from '../img/boba-finder-screenshot/gongcha.png'
 import Profile from '../img/boba-finder-screenshot/profile.png'
 import SignUp from '../img/boba-finder-screenshot/signup.png'
 
-class TripPlannerSlider extends React.Component {
+class BobaFinderSlider extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -110,7 +110,7 @@ class TripPlannerSlider extends React.Component {
         original: Gongcha,
         thumbnail: Gongcha
       },
-      
+
       {
         original: Profile,
         thumbnail: Profile
@@ -128,4 +128,4 @@ class TripPlannerSlider extends React.Component {
 
 }
 
-export default TripPlannerSlider;
+export default BobaFinderSlider;

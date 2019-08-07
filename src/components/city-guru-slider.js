@@ -1,20 +1,21 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import "react-image-gallery/styles/css/image-gallery.css";
-import Login from '../img/fund-run-screenshot/login.png';
-import SignUp from '../img/fund-run-screenshot/signup.png'
-import Profile from '../img/fund-run-screenshot/profile1.png'
-import Marathon from '../img/fund-run-screenshot/marathon.png'
-import MarathonDetail1 from '../img/fund-run-screenshot/marathon-detail-1.png'
-import MarathonDetail2 from '../img/fund-run-screenshot/marathon-detail-2.png'
-import Charity from '../img/fund-run-screenshot/charity.png'
-import Alzheimer from '../img/fund-run-screenshot/alzheimer-association.png'
-import Donation from '../img/fund-run-screenshot/donation.png'
-import Autism from '../img/fund-run-screenshot/autism.png'
-import Profile2 from '../img/fund-run-screenshot/profile2.png'
-import Profile3 from '../img/fund-run-screenshot/profile3.png'
+import Login from '../img/city-guru-screenshot/login.png';
+import MainMenu from '../img/city-guru-screenshot/mainmenu.png'
+import Search from '../img/city-guru-screenshot/1-search.png'
+import Salary from '../img/city-guru-screenshot/2-salary.png'
+import Salary2 from '../img/city-guru-screenshot/3-salary-2.png'
+import Save from '../img/city-guru-screenshot/4-savefavorite.png'
+import Favorites from '../img/city-guru-screenshot/5-favorites.png'
+import FunFacts from '../img/city-guru-screenshot/6-funfacts.png'
+import Quality from '../img/city-guru-screenshot/7-qualityoflife.png'
+import Safety from '../img/city-guru-screenshot/8-safest.png'
+import MostFavorites from '../img/city-guru-screenshot/9-mostfavorites.png'
+import QualityOfLife from '../img/city-guru-screenshot/10-qualityoflife2.png'
+import Bye from '../img/city-guru-screenshot/11-bye.png'
 
-class FundRunSlider extends React.Component {
+class CityGuruSlider extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -101,50 +102,54 @@ class FundRunSlider extends React.Component {
         thumbnail: Login
       },
       {
-        original: SignUp,
-        thumbnail: SignUp
+        original: MainMenu,
+        thumbnail: MainMenu
       },
       {
-        original: Profile,
-        thumbnail: Profile
+        original: Search,
+        thumbnail: Search
       },
       {
-        original: Marathon,
-        thumbnail: Marathon
+        original: Salary,
+        thumbnail: Salary
       },
 
       {
-        original: MarathonDetail1,
-        thumbnail: MarathonDetail1
+        original: Salary2,
+        thumbnail: Salary2
       },
       {
-        original: MarathonDetail2,
-        thumbnail: MarathonDetail2
+        original: Save,
+        thumbnail: Save
       },
       {
-        original: Charity,
-        thumbnail: Charity
+        original: Favorites,
+        thumbnail: Favorites
       },
       {
-        original: Alzheimer,
-        thumbnail: Alzheimer
+        original: FunFacts,
+        thumbnail: FunFacts
       },
       {
-        original: Donation,
-        thumbnail: Donation
+        original: Quality,
+        thumbnail: Quality
       },
       {
-        original: Autism,
-        thumbnail: Autism
+        original: Safety,
+        thumbnail: Safety
       },
       {
-        original: Profile2,
-        thumbnail: Profile2
+        original: MostFavorites,
+        thumbnail: MostFavorites
       },
       {
-        original: Profile3,
-        thumbnail: Profile3
+        original: QualityOfLife,
+        thumbnail: QualityOfLife
       },
+      {
+        original: Bye,
+        thumbnail: Bye
+      }
     ]
 
     return (
@@ -154,4 +159,4 @@ class FundRunSlider extends React.Component {
 
 }
 
-export default FundRunSlider;
+export default CityGuruSlider;
