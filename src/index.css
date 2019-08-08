@@ -83,10 +83,12 @@
   font-size: 16px;
 }
 
-.photo-1 {
+.six.wide.column.photos-container {
+
+}
+
+.profile-pic img {
   width: 100%;
-  height: 350px;
-  background-color: white;
 }
 
 .progress-bar {
@@ -102,11 +104,19 @@
   margin: 15px 0;
 }
 
+.three.wide.column.skill-name{
+  padding-right: 0;
+}
+
 .label {
-  background-color: #285943;
-  color: #fff;
+  /* background-color: #285943; */
+  color: #000;
   width: 100%;
-  text-align: center;
+  text-align: right;
+}
+
+.react-sweet-progress-line .react-sweet-progress-line-inner.react-sweet-progress-line-inner-status-active{
+  background-color: #2bad58!important;
 }
 
 .bar {
@@ -135,7 +145,7 @@
   display: -ms-flex;
   display: flex;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-top: 20px;
   justify-content: center;
 
 }
@@ -145,21 +155,22 @@
 }
 
 .icon-container i {
-  font-size: 36px;
-  color: #39C568;
+  font-size: 30px;
+  color: #1abc40;
 }
 
 .icon-container i:hover {
-  color: #275842;
+  color: #43e072;
 }
 
-.icon-container .ui.button {
-  background-color: #39C568;
-  color: #fff;
+.icon-container .ui.green.tiny.basic.button {
+  /* background-color: #1abc40;
+  color: #fff; */
 }
 
-.icon-container .ui.button:hover {
-  background-color: #275842
+.icon-container .ui.green.tiny.basic.button:hover {
+  color: #fff!important;
+  background-color: #21ba45!important;
 }
 
 /*/// PROJECT ///*/
