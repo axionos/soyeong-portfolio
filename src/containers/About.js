@@ -1,5 +1,10 @@
 import React from 'react';
-import { Container, Grid, Segment, Button, Visibility }from 'semantic-ui-react'
+import { Container, Grid, Segment, Button }from 'semantic-ui-react'
+import ProgressTemplate from '../components/ProgressTemplate';
+// import { Progress } from 'react-sweet-progress';
+// import "react-sweet-progress/lib/style.css";
+
+
 
 class About extends React.Component {
 
@@ -73,10 +78,10 @@ class About extends React.Component {
   render(){
     console.log('about props', this.props);
     return (
-      <React.Fragment>
+
       <div className='about-me' id='about'>
 
-      { this.props.showStatus && setTimeout(this.move, 700) }
+      { /*this.props.status && setTimeout(this.move, 700) */}
 
         <Container>
           <h1 className='page-title'>About Me</h1>
@@ -88,39 +93,74 @@ class About extends React.Component {
             </Grid.Column>
 
             <Grid.Column width={9} className='skills-container'>
+              <Grid stackable columns={2}>
+                <Grid.Column width={3}>
+                  <div className='js label'>JavaScript</div>
+                </Grid.Column>
+                <Grid.Column width={13}>
+                  { this.props.status && <ProgressTemplate percent={70} /> }
+                </Grid.Column>
+              </Grid>
+              <Grid stackable columns={2}>
+                <Grid.Column width={3}>
+                  <div className='react label'>React</div>
+                </Grid.Column>
+                <Grid.Column width={13}>
+                  { this.props.status && <ProgressTemplate percent={80} /> }
+                </Grid.Column>
+              </Grid>
+              <Grid stackable columns={2}>
+                <Grid.Column width={3}>
+                  <div className='ruby label'>Ruby/Rails</div>
+                </Grid.Column>
+                <Grid.Column width={13}>
+                  { this.props.status && <ProgressTemplate percent={70} /> }
+                </Grid.Column>
+              </Grid>
+              <Grid stackable columns={2}>
+                <Grid.Column width={3}>
+                  <div className='html label'>HTML</div>
+                </Grid.Column>
+                <Grid.Column width={13}>
+                  { this.props.status && <ProgressTemplate percent={90} /> }
+                </Grid.Column>
+              </Grid>
+              <Grid stackable columns={2}>
+                <Grid.Column width={3}>
+                  <div className='css label'>CSS</div>
+                </Grid.Column>
+                <Grid.Column width={13}>
+                  { this.props.status && <ProgressTemplate percent={90} /> }
+                </Grid.Column>
+              </Grid>
+              <Grid stackable columns={2}>
+                <Grid.Column width={3}>
+                  <div className='ui-design label'>UI Design</div>
+                </Grid.Column>
+                <Grid.Column width={13}>
+                  { this.props.status && <ProgressTemplate percent={80} /> }
+                </Grid.Column>
+              </Grid>
+              <Grid stackable columns={2}>
+                <Grid.Column width={3}>
+                  <div className='photoshop label'>Photoshop</div>
+                </Grid.Column>
+                <Grid.Column width={13}>
+                  { this.props.status && <ProgressTemplate percent={70} /> }
+                </Grid.Column>
+              </Grid>
+              <Grid stackable columns={2}>
+                <Grid.Column width={3}>
+                  <div className='illustrator label'>Illustrator</div>
+                </Grid.Column>
+                <Grid.Column width={13}>
+                  { this.props.status && <ProgressTemplate percent={70} /> }
+                </Grid.Column>
+              </Grid>
 
-              <div className='bar-container'>
-                <div className='js label'>JavaScript</div>
-                <div id="jsBar" className='bar'>0%</div>
-              </div>
-              <div className='bar-container'>
-                <div className='react label'>React</div>
-                <div id="reactBar" className='bar'>0%</div>
-              </div>
-              <div className='bar-container'>
-                <div className='ruby label'>Ruby/Rails</div>
-                <div id="rubyBar" className='bar'>0%</div>
-              </div>
-              <div className='bar-container'>
-                <div className='html label'>HTML</div>
-                <div id="htmlBar" className='bar'>0%</div>
-              </div>
-              <div className='bar-container'>
-                <div className='css label'>CSS</div>
-                <div id="cssBar" className='bar'>0%</div>
-              </div>
-              <div className='bar-container'>
-                <div className='ui-design label'>UI Design</div>
-                <div id="uiBar" className='bar'>0%</div>
-              </div>
-              <div className='bar-container'>
-                <div className='photoshop label'>Photoshop</div>
-                <div id="photoshopBar" className='bar'>0%</div>
-              </div>
-              <div className='bar-container'>
-                <div className='illustrator label'>Illustrator</div>
-                <div id="illustratorBar" className='bar'>0%</div>
-              </div>
+
+
+              
             </Grid.Column>
           </Grid>
           <div className='about-me-container'>
@@ -141,7 +181,7 @@ class About extends React.Component {
           </div>
         </Container>
       </div>
-      </React.Fragment>
+
     );
   }
 }

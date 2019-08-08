@@ -89,6 +89,10 @@
   background-color: white;
 }
 
+.progress-bar {
+
+}
+
 .bar-container {
   width: 100%;
   background-color: #eee;
@@ -101,9 +105,8 @@
 .label {
   background-color: #285943;
   color: #fff;
-  width: 100px;
+  width: 100%;
   text-align: center;
-  padding-top: 5px;
 }
 
 .bar {

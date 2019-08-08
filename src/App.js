@@ -8,11 +8,11 @@ import Blog from './containers/Blog'
 
 class App extends React.Component {
   state = {
-    skillsVisible: false
+    visible: false
   }
 
   showSkills = () => {
-    return this.state.skillsVisible ? null : this.setState({skillsVisible: true})
+    return this.state.visible ? null : this.setState({ visible: true })
   }
 
 
@@ -20,9 +20,9 @@ class App extends React.Component {
     console.log('app state', this.state);
     return (
       <div className="app">
-        <Intro showSkills={this.showSkills}/>
-        <Navbar showSkills={this.showSkills}/>
-        <About showStatus={this.state.skillsVisible}/>
+        <Intro showSkills={this.showSkills} />
+        <Navbar showSkills={this.showSkills} />
+        <About status={this.state.visible} />
         <Portfolio />
         <Blog />
       </div>
