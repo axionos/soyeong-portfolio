@@ -3,14 +3,19 @@ import { Button }from 'semantic-ui-react'
 import { Link } from 'react-scroll'
 
 class Intro extends React.Component {
+
   render(){
-    console.log('intro props', this.props);
+    // console.log('intro props', this.props);
     return (
       <div className="intro" id='intro'>
         <div className='intro-text-container'>
-          <div className='intro-text'>
+          <div className='intro-text' id='typedtext'>
+
             <h1>Hello, I'm Soyeong!</h1>
-            <h1>Full Stack Software Engineer based in New York</h1>
+            <h1 className='typewriter'>Full Stack Software Engineer based in New York</h1>
+
+          </div>
+          <div>
             <Link
               activeClass="active"
               to="about"

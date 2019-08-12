@@ -9,12 +9,6 @@ import profilePic from '../img/download.png'
 
 class About extends React.Component {
 
-  componentDidMount(){
-    // debugger
-    // this.props.showStatus && this.move()
-    // this.props.changeStatus()
-  }
-
   render(){
     console.log('about props', this.props);
     return (
