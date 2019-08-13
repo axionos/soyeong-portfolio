@@ -16,8 +16,7 @@ class Intro extends React.Component {
             </div>
 
             <p>Full Stack Software Engineer based in <span className='ny'>New York</span></p>
-
-            <div>
+            <div className='view-work'>
               <Link
                 activeClass="active"
                 to="about"
@@ -28,7 +27,11 @@ class Intro extends React.Component {
                 className='link'
                 onClick={this.props.showSkills}
               >
-                <Button className='view-work' onClick={this.props.showSkills}>View My Work</Button>
+                <Button inverted color='green' className='view-work' onClick={this.props.showSkills}>
+                  View My Work
+                  <i class="fas fa-angle-down"></i>
+                </Button>
+
               </Link>
             </div>
           </div>
