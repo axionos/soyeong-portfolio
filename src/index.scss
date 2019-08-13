@@ -1,7 +1,18 @@
+/**/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+/**/
+
+
 /*/// NAVBAR ///*/
 
 .nav-wrapper {
-  padding: 10px 0;
+  padding-bottom: 10px;
 }
 .ui.menu:not(.secondary):not(.text):not(.tabular):not(.borderless)>.container>.item:not(.right):not(.borderless):first-child {
   border: 0;
@@ -36,55 +47,93 @@
 }
 
 .ui.container.nav-container a.active .item {
-  /* font-weight: bold; */
   color: #43e072;
 }
 
 .ui.menu:not(.vertical) .right.item, .ui.menu:not(.vertical) .right.menu.dropdown-nav {
   display: none;
 }
+
+
 /*/// INTRO ///*/
 
 .intro{
   min-height: 100vh;
-
 }
 
 .intro-text-container {
-  /* position: absolute; */
-  /* width: 600px; */
-  /* height: 150px; */
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background-color: #dedede;
+}
+
+.intro-text h1 {
+  font-weight: bolder;
+  position: relative;
+	display: block;
+	margin: 0;
+	font-size: 6.5rem;
+	line-height: 1;
+	transform: translateY(6rem);
+	animation: up 500ms linear forwards;
+	z-index: 1;
+	text-shadow: 0px 1px 1px rgba(255,255,255,1);
+
+	&::before,
+	&::after {
+		position: absolute;
+		content: '';
+		width: 0px;
+		height: 1px;
+		left: 0;
+		background-color: rgba(0,0,0,0.2);
+		z-index: -1;
+	}
+
+	&::before {
+		top: 1.4rem;
+		animation: draw 500ms linear 1s forwards;
+	}
+
+	&::after {
+		bottom: 0.4rem;
+		animation: draw 500ms linear 1s forwards;
+	}
+}
+
+.intro-wrapper p {
+  font-family: 'Libre Caslon Display', serif;
+  font-size: 26px;
   text-align: center;
-  /* top: 40%;
-  left: 50%; */
-  /* margin-left: -300px; */
-}
-
-.typewriter  {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
-  animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: orange; }
+  // font-weight: lighter;
+  // font-style: italic;
+  margin: 10px 0;
 }
 
 .intro-text {
-  display: inline-block;
+  /* display: inline-block; */
+  font-size: 0;
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 0.4rem;
+}
+
+@keyframes up {
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes draw {
+	100% {
+		width: 100%;
+	}
+}
+
+.ny {
+  font-weight: bolder;
 }
 
 .ui.button.view-work {

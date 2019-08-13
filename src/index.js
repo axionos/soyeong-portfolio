@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import "node_modules/react-image-gallery/styles/css/image-gallery.css";
-import './index.css';
+import './index.scss';
 import App from './App';
 
 

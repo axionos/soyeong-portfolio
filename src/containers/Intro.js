@@ -7,30 +7,34 @@ class Intro extends React.Component {
   render(){
     // console.log('intro props', this.props);
     return (
+
       <div className="intro" id='intro'>
         <div className='intro-text-container'>
-          <div className='intro-text' id='typedtext'>
+          <div className='intro-wrapper'>
+            <div className='intro-text'>
+              <h1>Soyeong Oh</h1>
+            </div>
 
-            <h1>Hello, I'm Soyeong!</h1>
-            <h1 className='typewriter'>Full Stack Software Engineer based in New York</h1>
+            <p>Full Stack Software Engineer based in <span className='ny'>New York</span></p>
 
-          </div>
-          <div>
-            <Link
-              activeClass="active"
-              to="about"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration= {500}
-              className='link'
-              onClick={this.props.showSkills}
-            >
-              <Button className='view-work' onClick={this.props.showSkills}>View My Work</Button>
-            </Link>
+            <div>
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration= {500}
+                className='link'
+                onClick={this.props.showSkills}
+              >
+                <Button className='view-work' onClick={this.props.showSkills}>View My Work</Button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
+
     );
   }
 }
