@@ -6,7 +6,12 @@ class Blog extends React.Component {
     return (
       <div className="blog" id='blog'>
         <Container>
-          <h1 className='page-title'>Blog</h1>
+          <div className='pg-title-holder'>
+            <h1 className='page-title'>
+              Blog
+              <div className='title-bg'/>
+            </h1>
+          </div>
           <div id="medium-widget"></div>
         </Container>
       </div>

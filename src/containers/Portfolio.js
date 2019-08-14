@@ -21,7 +21,12 @@ class Portfolio extends React.Component {
       <div className="portfolio" id='project'>
 
       <Container>
-        <h1 className='page-title'>Projects</h1>
+        <div className='pg-title-holder'>
+          <h1 className='page-title'>
+            Projects
+            <div className='title-bg'/>
+          </h1>
+        </div>
         <Grid>
           <Grid.Row>
             <Grid.Column width={5}>

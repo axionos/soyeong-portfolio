@@ -8,7 +8,6 @@ import profilePic from '../img/download.png'
 
 
 class About extends React.Component {
-
   render(){
     console.log('about props', this.props);
     return (
@@ -19,7 +18,10 @@ class About extends React.Component {
 
         <Container>
           <div className='pg-title-holder'>
-            <h1 className='page-title'>About Me</h1>
+            <h1 className='page-title'>
+              About Me
+              <div className='title-bg'/>
+            </h1>
           </div>
           <Grid stackable columns={3}>
             <Grid.Column width={1}/>

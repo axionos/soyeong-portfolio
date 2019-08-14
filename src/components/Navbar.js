@@ -74,7 +74,7 @@ export default class StickyLayout extends Component {
                 to="about"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={30}
                 duration= {500}
                 className='link'
                 onClick={this.props.showSkills}
@@ -86,7 +86,7 @@ export default class StickyLayout extends Component {
                 to="project"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={30}
                 duration= {500}
                 className='link'
               >
@@ -97,7 +97,7 @@ export default class StickyLayout extends Component {
                 to="blog"
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={30}
                 duration= {500}
                 className='link'
               >

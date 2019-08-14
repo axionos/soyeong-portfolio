@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import About from './containers/About'
 import Portfolio from './containers/Portfolio'
 import Blog from './containers/Blog'
+import Footer from './components/Footer'
 // import Contact from './containers/Contact'
 
 class App extends React.Component {
@@ -25,6 +26,7 @@ class App extends React.Component {
         <About status={this.state.visible} />
         <Portfolio />
         <Blog />
+        <Footer />
       </div>
     );
   }
