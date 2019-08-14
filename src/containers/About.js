@@ -18,7 +18,9 @@ class About extends React.Component {
       { /*this.props.status && setTimeout(this.move, 700) */}
 
         <Container>
-          <h1 className='page-title'>About Me</h1>
+          <div className='pg-title-holder'>
+            <h1 className='page-title'>About Me</h1>
+          </div>
           <Grid stackable columns={3}>
             <Grid.Column width={1}/>
             <Grid.Column width={4} className='photos-container'>
