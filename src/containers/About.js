@@ -2,8 +2,7 @@ import React from 'react';
 import { Container, Grid, Segment, Button }from 'semantic-ui-react'
 import ProgressTemplate from '../components/ProgressTemplate';
 import profilePic from '../img/download.png'
-// import { Progress } from 'react-sweet-progress';
-// import "react-sweet-progress/lib/style.css";
+import resume from '../img/Resume_Soyeong_Oh.pdf'
 
 
 
@@ -38,7 +37,7 @@ class About extends React.Component {
                 <a href='https://github.com/axionos' target='_blank' rel='noopener noreferrer'>
                   <i class="fab fa-github-square"></i>
                 </a>
-                <a href='https://docs.google.com/document/d/1AYRvCdKcBvNb_3NKwQ2xADx076ZHQkcY-FyHO7vguKE/edit?usp=sharing' target='_blank' rel='noopener noreferrer'>
+                <a href={resume} target='_blank' rel='noopener noreferrer'>
                   <Button basic color='green' size='tiny'>Resume</Button>
                 </a>
               </div>

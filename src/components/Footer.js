@@ -1,5 +1,5 @@
 import React from 'react';
-
+import resume from '../img/Resume_Soyeong_Oh.pdf'
 
 class Footer extends React.Component {
 
@@ -14,7 +14,7 @@ class Footer extends React.Component {
             <a href='https://www.linkedin.com/in/soyeongoh/' rel='noopener noreferrer' target='_blank' alt='linkedin'>
               <i class="fab fa-linkedin-in"></i>
             </a>
-            <a href='https://www.linkedin.com/in/soyeongoh/' rel='noopener noreferrer' target='_blank' alt='linkedin'>
+            <a href={resume} rel='noopener noreferrer' target='_blank' alt='resume'>
               <i class="far fa-file"></i>
             </a>
           </span>
