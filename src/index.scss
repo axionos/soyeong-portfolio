@@ -243,6 +243,7 @@ body {
   display: flex;
   margin: 0 auto;
   margin-top: 20px;
+  padding: 0 40px;
   justify-content: center;
 }
 
@@ -250,10 +251,18 @@ body {
   margin-right: 10px;
 }
 
-.icon-container i {
-  font-size: 30px;
-  color: #1abc40;
+.icon-container img {
+  width: 100%;
 }
+
+.icon-container .ui.three.column.grid .column {
+  padding: 5px;
+}
+
+// .icon-container i {
+//   font-size: 30px;
+//   color: #1abc40;
+// }
 
 .icon-container i:hover {
   color: #43e072;

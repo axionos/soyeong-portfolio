@@ -3,6 +3,13 @@ import { Container, Grid, Segment, Button }from 'semantic-ui-react'
 import ProgressTemplate from '../components/ProgressTemplate';
 import profilePic from '../img/download.png'
 import resume from '../img/Resume_Soyeong_Oh.pdf'
+import github from '../img/github.png'
+import linkedin from '../img/linkedin.png'
+import blog from '../img/wordpress.png'
+import resume_icon from '../img/cv.png'
+
+
+
 
 
 
@@ -31,15 +38,33 @@ class About extends React.Component {
                 </div>
               </Segment>
               <div className='icon-container'>
-                <a href='https://www.linkedin.com/in/soyeongoh/' target='_blank' rel='noopener noreferrer'>
-                  <i class="fab fa-linkedin"></i>
-                </a>
-                <a href='https://github.com/axionos' target='_blank' rel='noopener noreferrer'>
-                  <i class="fab fa-github-square"></i>
-                </a>
-                <a href={resume} target='_blank' rel='noopener noreferrer'>
-                  <Button basic color='green' size='tiny'>Resume</Button>
-                </a>
+                <Grid columns={4}>
+                  <Grid.Column className='first'>
+                    <a href='https://www.linkedin.com/in/soyeongoh/' target='_blank' rel='noopener noreferrer'>
+                      {/*<i class="fab fa-linkedin"></i>*/}
+                      <img src={linkedin} alt='linkedin'/>
+                    </a>
+                  </Grid.Column>
+                  <Grid.Column className='second'>
+                    <a href='https://github.com/axionos' target='_blank' rel='noopener noreferrer'>
+                      {/*<i class="fab fa-github-square"></i>*/}
+                      <img src={github} alt='github'/>
+                    </a>
+                  </Grid.Column>
+                  <Grid.Column className='third'>
+                    <a href={resume} target='_blank' rel='noopener noreferrer'>
+                      {/*<Button basic color='green' size='tiny'>Resume</Button>*/}
+                      <img src={blog} alt='resume'/>
+                    </a>
+                  </Grid.Column>
+                  <Grid.Column className='fourth'>
+                    <a href={resume} target='_blank' rel='noopener noreferrer'>
+                      {/*<Button basic color='green' size='tiny'>Resume</Button>*/}
+                      <img src={resume_icon} alt='resume'/>
+                    </a>
+                  </Grid.Column>
+
+                </Grid>
               </div>
             </Grid.Column>
 
