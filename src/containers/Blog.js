@@ -13,6 +13,7 @@ class Blog extends React.Component {
             </h1>
           </div>
           <div id="medium-widget"></div>
+          <div className='to-the-top'></div>
         </Container>
       </div>
     );

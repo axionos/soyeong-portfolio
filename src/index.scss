@@ -271,7 +271,7 @@ body {
 .portfolio {
   padding: 150px 0 50px 0;
   background: #eee;
-  min-height: 100vh;
+  min-height: 110vh;
 }
 
 .project-modal{
@@ -374,15 +374,48 @@ p:first-child {
 .blog {
   padding: 170px 0 100px 0;
   background: #fff;
-  min-height: 95vh;
+  min-height: 90vh;
 }
+
+.medium-widget-article__content a:hover {
+  color: rgba(49, 216, 66, 1);
+}
+
+.to-the-top
 
 /*/// FOOTER ///*/
 
 .footer-wrapper {
    background-color: #191919;
    color: #aaa;
-   min-height: 100px;
+   min-height: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.footer-flex {
+
+}
+
+.footer-icon-container {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.footer-icon-container i {
+  margin: 5px;
+  color: #aaa;
+}
+
+.footer-icon-container i:hover {
+  color: rgba(49, 216, 66, 1);
+}
+
+.footer-flex p {
+  text-align: center;
 }
 
 // /*/// CONTACT ///*/
