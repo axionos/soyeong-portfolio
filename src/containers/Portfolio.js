@@ -28,8 +28,9 @@ class Portfolio extends React.Component {
           </h1>
         </div>
         <Grid stackable>
-          <Grid.Row>
-            <Grid.Column width={5}>
+          <Grid.Row columns={3}>
+
+            <Grid.Column>
               <Modal closeIcon
                 size='medium'
                 dimmer='blurring'
@@ -70,7 +71,7 @@ class Portfolio extends React.Component {
                 </Modal.Content>
               </Modal>
             </Grid.Column>
-            <Grid.Column width={5}>
+            <Grid.Column>
               <Modal closeIcon
                 size='medium'
                 dimmer='blurring'
@@ -107,7 +108,7 @@ class Portfolio extends React.Component {
                 </Modal.Content>
               </Modal>
             </Grid.Column>
-            <Grid.Column width={5}>
+            <Grid.Column>
               <Modal closeIcon
                 size='medium'
                 dimmer='blurring'
@@ -141,11 +142,10 @@ class Portfolio extends React.Component {
                 </Modal.Content>
               </Modal>
             </Grid.Column>
-
           </Grid.Row>
 
-          <Grid.Row>
-            <Grid.Column width={5}>
+          <Grid.Row columns={3}>
+            <Grid.Column>
               <Modal closeIcon
                 size='medium'
                 dimmer='blurring'
@@ -180,7 +180,7 @@ class Portfolio extends React.Component {
                 </Modal.Content>
               </Modal>
             </Grid.Column>
-            <Grid.Column width={5}>
+            <Grid.Column>
               <Modal closeIcon
                 size='medium'
                 dimmer='blurring'
@@ -213,7 +213,7 @@ class Portfolio extends React.Component {
                 </Modal.Content>
               </Modal>
             </Grid.Column>
-            <Grid.Column width={5}>
+            <Grid.Column>
               <Modal closeIcon
                 size='medium'
                 dimmer='blurring'
