@@ -27,7 +27,7 @@ class Portfolio extends React.Component {
             <div className='title-bg'/>
           </h1>
         </div>
-        <Grid>
+        <Grid stackable>
           <Grid.Row>
             <Grid.Column width={5}>
               <Modal closeIcon
