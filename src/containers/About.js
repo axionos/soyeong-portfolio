@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Grid, Segment, Button }from 'semantic-ui-react'
+import { Container, Grid, Segment }from 'semantic-ui-react'
 import ProgressTemplate from '../components/ProgressTemplate';
 import profilePic from '../img/download.png'
 import resume from '../img/Resume_Soyeong_Oh.pdf'
