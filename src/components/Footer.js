@@ -1,5 +1,5 @@
 import React from 'react';
-import resume from '../img/Resume_Soyeong_Oh.pdf'
+import resume from '../img/Resume_Soyeong_Cindy_Oh.pdf'
 
 class Footer extends React.Component {
 

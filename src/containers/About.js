@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Grid, Segment }from 'semantic-ui-react'
 import ProgressTemplate from '../components/ProgressTemplate';
 import profilePic from '../img/download.png'
-import resume from '../img/Resume_Soyeong_Oh.pdf'
+import resume from '../img/Resume_Soyeong_Cindy_Oh.pdf'
 import github from '../img/github.png'
 import linkedin from '../img/linkedin.png'
 import blog from '../img/wordpress.png'
