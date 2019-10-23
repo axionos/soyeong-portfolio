@@ -150,6 +150,10 @@ body {
   margin-left: 10px;
 }
 
+.fas {
+  margin-right: 5px;
+}
+
 /* /// ABOUT ME /// */
 
 .about-me {
@@ -284,7 +288,11 @@ body {
 }
 
 .project-modal{
-  min-height: 850px;
+  min-height: 550px;
+}
+
+.project-modal img {
+  width: 100%;
 }
 
 .description {

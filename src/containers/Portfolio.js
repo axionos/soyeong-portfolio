@@ -12,6 +12,7 @@ import bobaFinderThumbnail from '../img/boba-finder-screenshot/main.png'
 import cocktailMenuThumbnail from '../img/cocktail-menu-screenshot/mood.png'
 import fundRunThumbnail from '../img/fund-run-screenshot/marathon.png'
 import motorImpactThumbnail from '../img/motor-impact-screenshot/main.png'
+import todoThumbnail from '../img/simple-to-do-screenshot/simple-to-do.png'
 import cityGuruThumbnail from '../img/city-guru-screenshot/login.png'
 
 
@@ -191,9 +192,13 @@ class Portfolio extends React.Component {
                 }
               >
                 <Modal.Content className='project-modal'>
-                  <MICSlider />
+                  <a href='https://www.oebodyparts.com' target='_blank'>
+                    <MICSlider />
+                  </a>
                   <Modal.Description>
-                    <h2 className='project-title'>Motor Impact of Canada</h2>
+                    <a href='https://www.oebodyparts.com' target='_blank'>
+                      <h2 className='project-title'>Motor Impact of Canada</h2>
+                    </a>
                     <div className='project-links'>
                       <a href='https://www.oebodyparts.com' target='_blank'>
                         <i class="fas fa-external-link-square-alt"></i>
@@ -219,33 +224,79 @@ class Portfolio extends React.Component {
                 dimmer='blurring'
                 trigger={
                   <div className='project-img-container'>
-                    <img src={cityGuruThumbnail} alt='Motor Impact of Canada' />
+                    <img src={todoThumbnail} alt='Simple To Do' />
                   </div>
                 }
               >
                 <Modal.Content className='project-modal'>
-                  <CityGuruSlider />
+                  <div>
+                    <a href='https://to-do-list-simple.herokuapp.com/' target='_blank'>
+                      <img src={todoThumbnail} alt='Simple To Do' />
+                    </a>
+                  </div>
                   <Modal.Description>
-                    <h2 className='project-title'>City Guru</h2>
+                    <a href='https://to-do-list-simple.herokuapp.com/' target='_blank'>
+                      <h2 className='project-title'>Simple To Do</h2>
+                    </a>
+
                     <div className='project-links'>
-                      <a href='https://github.com/axionos/city-guru-project' target='_blank'>
+                      <a href='https://to-do-list-simple.herokuapp.com/' target='_blank'>
+                        <i class="fas fa-external-link-square-alt"></i>
+                      </a>
+                      <a href='https://github.com/axionos/simple-to-do' target='_blank'>
                         <i class="fab fa-github-square"></i>
                       </a>
                     </div>
                     <div className='project-detail'>
-                      <p>City Guru is CLI app built with pure Ruby code. It uses <span className='bold'>Teleport API</span> and allows a user to search for a basic information, salary information, and quality of living information of an urban city the user looks up.</p>
-                      <p>● Developed with pure Ruby backend</p>
-                      <p>● Utilized Teleport API to obtain urban city information</p>
+
+                      <p>● Developed with vanilla JavaScript and CSS.</p>
+                      <p>● Fully responsive design to various screen sizes.</p>
                     </div>
                     <div className='skills-used'>
-                      <span className='skill-used'>Ruby</span>
-                      <span className='skill-used'>Teleport API</span>
+                      <span className='skill-used'>JavaScript</span>
+                      <span className='skill-used'>CSS</span>
+                      <span className='skill-used'>Responsive Design</span>
+                      <span className='skill-used'>Heroku</span>
                     </div>
                   </Modal.Description>
                 </Modal.Content>
               </Modal>
             </Grid.Column>
 
+          </Grid.Row>
+          <Grid.Row columns={3}>
+          <Grid.Column>
+            <Modal closeIcon
+              size='medium'
+              dimmer='blurring'
+              trigger={
+                <div className='project-img-container'>
+                  <img src={cityGuruThumbnail} alt='City Guru' />
+                </div>
+              }
+            >
+              <Modal.Content className='project-modal'>
+                <CityGuruSlider />
+                <Modal.Description>
+                  <h2 className='project-title'>City Guru</h2>
+                  <div className='project-links'>
+                    <a href='https://github.com/axionos/city-guru-project' target='_blank'>
+                      <i class="fab fa-github-square"></i>
+                    </a>
+                  </div>
+                  <div className='project-detail'>
+                    <p>City Guru is CLI app built with pure Ruby code. It uses <span className='bold'>Teleport API</span> and allows a user to search for a basic information, salary information, and quality of living information of an urban city the user looks up.</p>
+                    <p>● Developed with pure Ruby backend</p>
+                    <p>● Utilized Teleport API to obtain urban city information</p>
+                  </div>
+                  <div className='skills-used'>
+                    <span className='skill-used'>Ruby</span>
+                    <span className='skill-used'>Teleport API</span>
+                  </div>
+                </Modal.Description>
+              </Modal.Content>
+            </Modal>
+          </Grid.Column>
           </Grid.Row>
         </Grid>
       </Container>
